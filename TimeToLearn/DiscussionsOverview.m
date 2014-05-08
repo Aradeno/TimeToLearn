@@ -1,18 +1,18 @@
 //
-//  CourseInformationScreen.m
+//  DiscussionsOverview.m
 //  TimeToLearn
 //
 //  Created by admin on 5/8/14.
 //  Copyright (c) 2014 TIS. All rights reserved.
 //
 
-#import "CourseInformationScreen.h"
+#import "DiscussionsOverview.h"
 
-@interface CourseInformationScreen ()
+@interface DiscussionsOverview ()
 
 @end
 
-@implementation CourseInformationScreen
+@implementation DiscussionsOverview
 
 - (id)initWithStyle:(UITableViewStyle)style
 {

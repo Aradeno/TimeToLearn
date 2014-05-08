@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuizzesOverview : UIViewController
+@interface QuizzesOverview : UITableViewController
 
 @end

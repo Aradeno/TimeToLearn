@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AnswerScreen : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *lbAntwoordCheck;
+@property (weak, nonatomic) IBOutlet UILabel *lbSuggestie;
 
 @end

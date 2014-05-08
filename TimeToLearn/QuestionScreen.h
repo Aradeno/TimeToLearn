@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface QuestionScreen : UIViewController
+@property (strong, nonatomic) IBOutlet UIView *infogrpahic;
+@property (weak, nonatomic) IBOutlet UILabel *titelVraag;
+@property (weak, nonatomic) IBOutlet UILabel *subtitelVraag;
+@property (weak, nonatomic) IBOutlet UILabel *vraag;
 
 @end

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844ECC74191B8EC300C34CA4 /* QuizzesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ECC73191B8EC300C34CA4 /* QuizzesOverview.m */; };
+		844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ECC76191B903300C34CA4 /* DiscussionsOverview.m */; };
+		844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ECC79191B91A600C34CA4 /* DiscussionScreen.m */; };
+		84AA520C191B896400602164 /* CourseChoiceScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA520B191B896400602164 /* CourseChoiceScreen.m */; };
+		84AA520F191B8A0400602164 /* VideoScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA520E191B8A0400602164 /* VideoScreen.m */; };
+		84AA5212191B8A1000602164 /* MagazineScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA5211191B8A1000602164 /* MagazineScreen.m */; };
 		84D782C1191B5D15004D008A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D782C0191B5D15004D008A /* Foundation.framework */; };
 		84D782C3191B5D15004D008A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D782C2191B5D15004D008A /* CoreGraphics.framework */; };
 		84D782C5191B5D15004D008A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D782C4191B5D15004D008A /* UIKit.framework */; };
@@ -23,14 +29,11 @@
 		84D782F7191B5F59004D008A /* LoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D782F6191B5F59004D008A /* LoginScreen.m */; };
 		84D782FA191B5F79004D008A /* CoursesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D782F9191B5F79004D008A /* CoursesOverview.m */; };
 		84D782FD191B5FC3004D008A /* CourseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D782FC191B5FC3004D008A /* CourseScreen.m */; };
-		84D78300191B5FEA004D008A /* CourseInformationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D782FF191B5FEA004D008A /* CourseInformationScreen.m */; };
 		84D78303191B601E004D008A /* QuestionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78302191B601E004D008A /* QuestionScreen.m */; };
 		84D78306191B6031004D008A /* AnswerScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78305191B6031004D008A /* AnswerScreen.m */; };
-		84D78309191B608B004D008A /* QuizzesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78308191B608B004D008A /* QuizzesOverview.m */; };
-		84D7830C191B60C7004D008A /* DicussionsOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D7830B191B60C7004D008A /* DicussionsOverview.m */; };
-		84D7830F191B60D8004D008A /* DiscussionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D7830E191B60D8004D008A /* DiscussionScreen.m */; };
 		84D78312191B6122004D008A /* SettingsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78311191B6122004D008A /* SettingsScreen.m */; };
 		84D78315191B6133004D008A /* NotificationsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78314191B6133004D008A /* NotificationsScreen.m */; };
+		84DEDDB2191B8615000ABCF1 /* CourseInformationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844ECC72191B8EC300C34CA4 /* QuizzesOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizzesOverview.h; sourceTree = "<group>"; };
+		844ECC73191B8EC300C34CA4 /* QuizzesOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizzesOverview.m; sourceTree = "<group>"; };
+		844ECC75191B903300C34CA4 /* DiscussionsOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionsOverview.h; sourceTree = "<group>"; };
+		844ECC76191B903300C34CA4 /* DiscussionsOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionsOverview.m; sourceTree = "<group>"; };
+		844ECC78191B91A600C34CA4 /* DiscussionScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionScreen.h; sourceTree = "<group>"; };
+		844ECC79191B91A600C34CA4 /* DiscussionScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionScreen.m; sourceTree = "<group>"; };
+		84AA520A191B896400602164 /* CourseChoiceScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseChoiceScreen.h; sourceTree = "<group>"; };
+		84AA520B191B896400602164 /* CourseChoiceScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseChoiceScreen.m; sourceTree = "<group>"; };
+		84AA520D191B8A0400602164 /* VideoScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoScreen.h; sourceTree = "<group>"; };
+		84AA520E191B8A0400602164 /* VideoScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoScreen.m; sourceTree = "<group>"; };
+		84AA5210191B8A1000602164 /* MagazineScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagazineScreen.h; sourceTree = "<group>"; };
+		84AA5211191B8A1000602164 /* MagazineScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagazineScreen.m; sourceTree = "<group>"; };
 		84D782BD191B5D15004D008A /* TimeToLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D782C0191B5D15004D008A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84D782C2191B5D15004D008A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,22 +82,16 @@
 		84D782F9191B5F79004D008A /* CoursesOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesOverview.m; sourceTree = "<group>"; };
 		84D782FB191B5FC3004D008A /* CourseScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseScreen.h; sourceTree = "<group>"; };
 		84D782FC191B5FC3004D008A /* CourseScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseScreen.m; sourceTree = "<group>"; };
-		84D782FE191B5FEA004D008A /* CourseInformationScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInformationScreen.h; sourceTree = "<group>"; };
-		84D782FF191B5FEA004D008A /* CourseInformationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInformationScreen.m; sourceTree = "<group>"; };
 		84D78301191B601E004D008A /* QuestionScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionScreen.h; sourceTree = "<group>"; };
 		84D78302191B601E004D008A /* QuestionScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionScreen.m; sourceTree = "<group>"; };
 		84D78304191B6031004D008A /* AnswerScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerScreen.h; sourceTree = "<group>"; };
 		84D78305191B6031004D008A /* AnswerScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerScreen.m; sourceTree = "<group>"; };
-		84D78307191B608B004D008A /* QuizzesOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizzesOverview.h; sourceTree = "<group>"; };
-		84D78308191B608B004D008A /* QuizzesOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizzesOverview.m; sourceTree = "<group>"; };
-		84D7830A191B60C7004D008A /* DicussionsOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DicussionsOverview.h; sourceTree = "<group>"; };
-		84D7830B191B60C7004D008A /* DicussionsOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DicussionsOverview.m; sourceTree = "<group>"; };
-		84D7830D191B60D7004D008A /* DiscussionScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionScreen.h; sourceTree = "<group>"; };
-		84D7830E191B60D8004D008A /* DiscussionScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionScreen.m; sourceTree = "<group>"; };
 		84D78310191B6122004D008A /* SettingsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsScreen.h; sourceTree = "<group>"; };
 		84D78311191B6122004D008A /* SettingsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsScreen.m; sourceTree = "<group>"; };
 		84D78313191B6133004D008A /* NotificationsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsScreen.h; sourceTree = "<group>"; };
 		84D78314191B6133004D008A /* NotificationsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsScreen.m; sourceTree = "<group>"; };
+		84DEDDB0191B8615000ABCF1 /* CourseInformationScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInformationScreen.h; sourceTree = "<group>"; };
+		84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInformationScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,22 +162,28 @@
 				84D782F9191B5F79004D008A /* CoursesOverview.m */,
 				84D782FB191B5FC3004D008A /* CourseScreen.h */,
 				84D782FC191B5FC3004D008A /* CourseScreen.m */,
-				84D782FE191B5FEA004D008A /* CourseInformationScreen.h */,
-				84D782FF191B5FEA004D008A /* CourseInformationScreen.m */,
 				84D78301191B601E004D008A /* QuestionScreen.h */,
 				84D78302191B601E004D008A /* QuestionScreen.m */,
 				84D78304191B6031004D008A /* AnswerScreen.h */,
 				84D78305191B6031004D008A /* AnswerScreen.m */,
-				84D78307191B608B004D008A /* QuizzesOverview.h */,
-				84D78308191B608B004D008A /* QuizzesOverview.m */,
-				84D7830A191B60C7004D008A /* DicussionsOverview.h */,
-				84D7830B191B60C7004D008A /* DicussionsOverview.m */,
-				84D7830D191B60D7004D008A /* DiscussionScreen.h */,
-				84D7830E191B60D8004D008A /* DiscussionScreen.m */,
 				84D78310191B6122004D008A /* SettingsScreen.h */,
 				84D78311191B6122004D008A /* SettingsScreen.m */,
 				84D78313191B6133004D008A /* NotificationsScreen.h */,
 				84D78314191B6133004D008A /* NotificationsScreen.m */,
+				84DEDDB0191B8615000ABCF1 /* CourseInformationScreen.h */,
+				84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */,
+				84AA520A191B896400602164 /* CourseChoiceScreen.h */,
+				84AA520B191B896400602164 /* CourseChoiceScreen.m */,
+				84AA520D191B8A0400602164 /* VideoScreen.h */,
+				84AA520E191B8A0400602164 /* VideoScreen.m */,
+				84AA5210191B8A1000602164 /* MagazineScreen.h */,
+				84AA5211191B8A1000602164 /* MagazineScreen.m */,
+				844ECC72191B8EC300C34CA4 /* QuizzesOverview.h */,
+				844ECC73191B8EC300C34CA4 /* QuizzesOverview.m */,
+				844ECC75191B903300C34CA4 /* DiscussionsOverview.h */,
+				844ECC76191B903300C34CA4 /* DiscussionsOverview.m */,
+				844ECC78191B91A600C34CA4 /* DiscussionScreen.h */,
+				844ECC79191B91A600C34CA4 /* DiscussionScreen.m */,
 			);
 			path = TimeToLearn;
 			sourceTree = "<group>";
@@ -299,19 +314,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D78309191B608B004D008A /* QuizzesOverview.m in Sources */,
-				84D7830F191B60D8004D008A /* DiscussionScreen.m in Sources */,
-				84D78300191B5FEA004D008A /* CourseInformationScreen.m in Sources */,
-				84D7830C191B60C7004D008A /* DicussionsOverview.m in Sources */,
 				84D78315191B6133004D008A /* NotificationsScreen.m in Sources */,
+				844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */,
 				84D78306191B6031004D008A /* AnswerScreen.m in Sources */,
 				84D782FA191B5F79004D008A /* CoursesOverview.m in Sources */,
 				84D78303191B601E004D008A /* QuestionScreen.m in Sources */,
+				84AA5212191B8A1000602164 /* MagazineScreen.m in Sources */,
+				84DEDDB2191B8615000ABCF1 /* CourseInformationScreen.m in Sources */,
 				84D782FD191B5FC3004D008A /* CourseScreen.m in Sources */,
 				84D782F7191B5F59004D008A /* LoginScreen.m in Sources */,
+				84AA520F191B8A0400602164 /* VideoScreen.m in Sources */,
 				84D782D1191B5D15004D008A /* AppDelegate.m in Sources */,
 				84D782CD191B5D15004D008A /* main.m in Sources */,
 				84D78312191B6122004D008A /* SettingsScreen.m in Sources */,
+				844ECC74191B8EC300C34CA4 /* QuizzesOverview.m in Sources */,
+				844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */,
+				84AA520C191B896400602164 /* CourseChoiceScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +534,7 @@
 				84D782F1191B5D15004D008A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D782F2191B5D15004D008A /* Build configuration list for PBXNativeTarget "TimeToLearnTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +543,7 @@
 				84D782F4191B5D15004D008A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

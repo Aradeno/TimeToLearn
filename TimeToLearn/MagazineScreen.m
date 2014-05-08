@@ -1,18 +1,18 @@
 //
-//  LoginScreen.m
+//  MagazineScreen.m
 //  TimeToLearn
 //
 //  Created by admin on 5/8/14.
 //  Copyright (c) 2014 TIS. All rights reserved.
 //
 
-#import "LoginScreen.h"
+#import "MagazineScreen.h"
 
-@interface LoginScreen ()
+@interface MagazineScreen ()
 
 @end
 
-@implementation LoginScreen
+@implementation MagazineScreen
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,8 +33,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)inloggen:(id)sender {
 }
 
 /*

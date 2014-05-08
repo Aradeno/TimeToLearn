@@ -1,18 +1,18 @@
 //
-//  LoginScreen.m
+//  VideoScreen.m
 //  TimeToLearn
 //
 //  Created by admin on 5/8/14.
 //  Copyright (c) 2014 TIS. All rights reserved.
 //
 
-#import "LoginScreen.h"
+#import "VideoScreen.h"
 
-@interface LoginScreen ()
+@interface VideoScreen ()
 
 @end
 
-@implementation LoginScreen
+@implementation VideoScreen
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,8 +33,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)inloggen:(id)sender {
 }
 
 /*

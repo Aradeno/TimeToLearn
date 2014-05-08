@@ -1,5 +1,5 @@
 //
-//  DicussionsOverview.h
+//  VideoScreen.h
 //  TimeToLearn
 //
 //  Created by admin on 5/8/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DicussionsOverview : UIViewController
+@interface VideoScreen : UIViewController
 
 @end

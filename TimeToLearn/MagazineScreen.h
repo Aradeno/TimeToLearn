@@ -1,5 +1,5 @@
 //
-//  DiscussionScreen.h
+//  MagazineScreen.h
 //  TimeToLearn
 //
 //  Created by admin on 5/8/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiscussionScreen : UITableViewController
+@interface MagazineScreen : UIViewController
 
 @end

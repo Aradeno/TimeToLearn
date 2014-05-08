@@ -1,18 +1,18 @@
 //
-//  DicussionsOverview.m
+//  CourseChoiceScreen.m
 //  TimeToLearn
 //
 //  Created by admin on 5/8/14.
 //  Copyright (c) 2014 TIS. All rights reserved.
 //
 
-#import "DicussionsOverview.h"
+#import "CourseChoiceScreen.h"
 
-@interface DicussionsOverview ()
+@interface CourseChoiceScreen ()
 
 @end
 
-@implementation DicussionsOverview
+@implementation CourseChoiceScreen
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +33,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)btnMagazine:(id)sender {
+}
+- (IBAction)btnVideo:(id)sender {
 }
 
 /*
