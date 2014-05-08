@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E877EFD2-20EE-4E76-B8D6-6F129D6197FD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TimeToLearn</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F69CD0E9-6347-45F9-9E6C-E385FBC5EA7A</key>
+		<string>https://github.com/Ariadeno/TimeToLearn.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TimeToLearn.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F69CD0E9-6347-45F9-9E6C-E385FBC5EA7A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Ariadeno/TimeToLearn.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F69CD0E9-6347-45F9-9E6C-E385FBC5EA7A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F69CD0E9-6347-45F9-9E6C-E385FBC5EA7A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TimeToLearn</string>
+		</dict>
+	</array>
+</dict>
+</plist>
