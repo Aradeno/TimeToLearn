@@ -11,5 +11,6 @@
 @interface LoginScreen : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *txtGebruikersnaam;
 @property (weak, nonatomic) IBOutlet UITextField *txtWachtwoord;
+@property (weak, nonatomic) IBOutlet UIButton *btnLogIn;
 
 @end

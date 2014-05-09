@@ -11,5 +11,6 @@
 @interface AnswerScreen : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *lbAntwoordCheck;
 @property (weak, nonatomic) IBOutlet UILabel *lbSuggestie;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
 
 @end

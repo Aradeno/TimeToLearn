@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *titelVraag;
 @property (weak, nonatomic) IBOutlet UILabel *subtitelVraag;
 @property (weak, nonatomic) IBOutlet UILabel *vraag;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
 
 @end

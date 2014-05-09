@@ -25,6 +25,9 @@
 
 - (void)viewDidLoad
 {
+    CALayer *btnLayer = [_nextBtn layer];
+    [btnLayer setMasksToBounds:YES];
+    [btnLayer setCornerRadius:5.0f];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

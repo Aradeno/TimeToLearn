@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CourseChoiceScreen : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *videoBtn;
+@property (weak, nonatomic) IBOutlet UIButton *magazineBtn;
 
 @end
