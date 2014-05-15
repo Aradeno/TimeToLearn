@@ -17,7 +17,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccR-fJ-nTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1097" y="-135"/>
+            <point key="canvasLocation" x="-1102" y="-108"/>
         </scene>
         <!--Login Screen - Time to Learn-->
         <scene sceneID="ufC-wZ-h7g">
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-605" y="-144"/>
+            <point key="canvasLocation" x="-602" y="-108"/>
         </scene>
         <!--Question Screen-->
         <scene sceneID="HGc-Rc-ozA">
@@ -276,7 +276,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xI6-pu-ryR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="734"/>
+            <point key="canvasLocation" x="-556" y="722"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="fW8-DW-XBS">
@@ -306,7 +306,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGC-Nb-8D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="706"/>
+            <point key="canvasLocation" x="257" y="1026"/>
         </scene>
         <!--Settings Screen-->
         <scene sceneID="saK-UD-iFP">
@@ -324,7 +324,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tpn-lI-fED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="734"/>
+            <point key="canvasLocation" x="-183" y="694"/>
         </scene>
         <!--Notifications Screen-->
         <scene sceneID="UsU-tL-CkO">
@@ -389,6 +389,14 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Cursussen" id="xtn-IH-upY">
                         <barButtonItem key="backBarButtonItem" title=" " id="Wuq-tF-bam"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Cb2-Ra-G9w">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7rF-sW-OuU">
+                                <rect key="frame" x="233" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Planning"/>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -474,7 +482,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHG-ns-HcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="-132"/>
+            <point key="canvasLocation" x="229" y="-108"/>
         </scene>
         <!--Course Choice Screen-->
         <scene sceneID="fie-QR-kYd">
