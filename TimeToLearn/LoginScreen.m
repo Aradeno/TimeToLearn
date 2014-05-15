@@ -7,6 +7,7 @@
 //
 
 #import "LoginScreen.h"
+#import "TopNavigationController.h"
 
 
 @interface LoginScreen ()
@@ -44,7 +45,11 @@
 - (IBAction)inloggen:(id)sender {
     if([txtGebruikersnaam.text isEqual:@"test"] && [txtWachtwoord.text isEqual:@"test"]){
     [self performSegueWithIdentifier:@"pushToCoursesOverview" sender:self];
-        [[self navigationController] topViewController];
+        TopNavigationController* controller = [[self navigationController] topViewController];
+        
+        controller.cursussen;
+        
+        
         
     } else {
             UIAlertView *alertView =
