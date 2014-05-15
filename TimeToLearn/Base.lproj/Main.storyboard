@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S7L-hA-1DW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S7L-hA-1DW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Top Navigation Controller-->
@@ -276,7 +276,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xI6-pu-ryR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-556" y="722"/>
+            <point key="canvasLocation" x="-1076" y="778"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="fW8-DW-XBS">
@@ -289,7 +289,7 @@
                         <color key="sectionIndexTrackingBackgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ot3-fh-CZG">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ot3-fh-CZG" id="E0T-g8-HqZ">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -303,28 +303,11 @@
                             <outlet property="delegate" destination="ZqV-db-6IN" id="GN9-46-yWu"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="8o4-Iq-7VT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGC-Nb-8D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="1026"/>
-        </scene>
-        <!--Settings Screen-->
-        <scene sceneID="saK-UD-iFP">
-            <objects>
-                <viewController id="5T5-s0-Hzt" customClass="SettingsScreen" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="d5E-yH-Bhn"/>
-                        <viewControllerLayoutGuide type="bottom" id="4kq-sH-aWq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sCu-6U-IX4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tpn-lI-fED" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-183" y="694"/>
+            <point key="canvasLocation" x="-3" y="714"/>
         </scene>
         <!--Notifications Screen-->
         <scene sceneID="UsU-tL-CkO">
@@ -342,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEC-3h-L3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="746"/>
+            <point key="canvasLocation" x="438" y="714"/>
         </scene>
         <!--Courses Overview - Cursussen-->
         <scene sceneID="tCF-rR-FG7">
@@ -395,6 +378,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Planning"/>
+                                <connections>
+                                    <segue destination="ZqV-db-6IN" kind="push" id="54v-tf-eGS"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
