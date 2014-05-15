@@ -12,7 +12,7 @@
 
 -(void)addScore
 {
-    self.Score++;
+    self.score++;
     
 }
 @end

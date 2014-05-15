@@ -44,6 +44,8 @@
 - (IBAction)inloggen:(id)sender {
     if([txtGebruikersnaam.text isEqual:@"test"] && [txtWachtwoord.text isEqual:@"test"]){
     [self performSegueWithIdentifier:@"pushToCoursesOverview" sender:self];
+        [[self navigationController] topViewController];
+        
     } else {
             UIAlertView *alertView =
             [[UIAlertView alloc] initWithTitle:@"Inloggegevens" message:[NSString stringWithFormat:@"Combinatie van gebruikersnaam en wachtwoord niet correct."] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];

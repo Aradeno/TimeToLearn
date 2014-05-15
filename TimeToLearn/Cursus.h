@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Cursus : NSObject
-@property NSInteger id;
-@property NSString* naam;
-
+@property NSString* cursusId;
+@property NSString* naamCursus;
 @property NSMutableArray* vragen;
+@property NSString* identifier;
+@property NSString* imgURL;
 @end

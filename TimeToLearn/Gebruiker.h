@@ -10,11 +10,12 @@
 
 @interface Gebruiker : NSObject
 
-@property NSString* Naam;
-@property NSString* Wachtwoord;
-@property NSInteger Score;
+@property NSString* gebruikersnaam;
+@property NSString* wachtwoord;
+@property NSInteger score;
 @property NSMutableArray* cursussen;
-
 @property NSMutableArray* berichten;
+
 -(void) addScore;
+
 @end

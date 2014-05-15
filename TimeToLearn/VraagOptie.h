@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface VraagOptie : NSObject
-@property NSInteger id;
+@property NSInteger vraagOptieId;
 @property NSString* antwoord;
 @end

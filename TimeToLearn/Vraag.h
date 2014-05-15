@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Vraag : NSObject
-@property NSInteger id;
+@property NSInteger vraagId;
 @property NSString* lesstof;
-@property NSString* Quizvraag;
+@property NSString* quizvraag;
 @property NSInteger antwoordID;
 
 @property NSMutableArray* vraagOpties;

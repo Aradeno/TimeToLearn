@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Top Navigation Controller-->
         <scene sceneID="SX4-Vs-zWi">
             <objects>
-                <navigationController definesPresentationContext="YES" id="S7L-hA-1DW" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="S7L-hA-1DW" customClass="TopNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9U8-Rk-Uof">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -474,7 +474,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHG-ns-HcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="-108"/>
+            <point key="canvasLocation" x="229" y="-132"/>
         </scene>
         <!--Course Choice Screen-->
         <scene sceneID="fie-QR-kYd">

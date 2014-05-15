@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Bericht : NSObject
-@property NSInteger id;
-@property NSString* Tekst;
-
+@property NSInteger berichtId;
+@property NSString* berichtTekst;
 @property NSMutableArray* reacties;
 @end
