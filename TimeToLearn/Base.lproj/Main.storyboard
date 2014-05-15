@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UIR-eu-RxZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S7L-hA-1DW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -17,7 +17,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccR-fJ-nTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1081" y="-135"/>
+            <point key="canvasLocation" x="-1097" y="-135"/>
         </scene>
         <!--Login Screen - Time to Learn-->
         <scene sceneID="ufC-wZ-h7g">
@@ -53,8 +53,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="inloggen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="l36-b0-Cfu"/>
-                                    <segue destination="B4V-my-Exk" kind="push" id="Mky-nz-IZI"/>
+                                    <action selector="inloggen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vck-Nc-fT3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,11 +66,12 @@
                         <outlet property="btnLogIn" destination="sfx-wd-Si8" id="KGZ-sf-bes"/>
                         <outlet property="txtGebruikersnaam" destination="idn-v0-PUV" id="Mrf-mA-CMi"/>
                         <outlet property="txtWachtwoord" destination="M2R-kX-Cqa" id="HP9-ks-Qd6"/>
+                        <segue destination="B4V-my-Exk" kind="push" identifier="pushToCoursesOverview" id="gxy-Ns-vJ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-603" y="-135"/>
+            <point key="canvasLocation" x="-605" y="-144"/>
         </scene>
         <!--Question Screen-->
         <scene sceneID="HGc-Rc-ozA">
@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G8U-3V-NlH">
-                                <rect key="frame" x="0.0" y="44" width="320" height="227"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="167"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vraag 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weZ-io-3ts">
@@ -348,25 +348,25 @@
         <scene sceneID="tCF-rR-FG7">
             <objects>
                 <tableViewController id="B4V-my-Exk" customClass="CoursesOverview" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="ABh-Gx-Egp">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" id="ABh-Gx-Egp">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="Ftt-51-WPu">
-                                <rect key="frame" x="0.0" y="22" width="320" height="80"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="courseCell" rowHeight="85" id="Ftt-51-WPu" customClass="CoursesOverviewTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ftt-51-WPu" id="k5e-ZI-39X">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="84"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GnF-EK-FWh">
-                                            <rect key="frame" x="5" y="0.0" width="85" height="79"/>
+                                            <rect key="frame" x="5" y="5" width="75" height="75"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pND-0K-Jvr">
-                                            <rect key="frame" x="105" y="29" width="42" height="21"/>
+                                            <rect key="frame" x="88" y="31" width="199" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
@@ -374,6 +374,11 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="courseImage" destination="GnF-EK-FWh" id="ZsC-LF-lFa"/>
+                                    <outlet property="courseTitle" destination="pND-0K-Jvr" id="Z89-96-WTP"/>
+                                    <segue destination="1rW-nM-nYO" kind="push" id="XVN-Xq-bL0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -390,7 +395,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWc-Kc-NNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213" y="-132"/>
+            <point key="canvasLocation" x="-163" y="-108"/>
         </scene>
         <!--Magazine Screen-->
         <scene sceneID="niQ-KS-6zN">
@@ -439,7 +444,7 @@
                         <color key="sectionIndexTrackingBackgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="mpi-7N-m5g">
-                                <rect key="frame" x="0.0" y="22" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mpi-7N-m5g" id="dPC-IU-nMx">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -465,10 +470,11 @@
                             <outlet property="delegate" destination="1rW-nM-nYO" id="pFo-eL-Xwh"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="xbc-uF-VVU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHG-ns-HcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192" y="-132"/>
+            <point key="canvasLocation" x="294" y="-108"/>
         </scene>
         <!--Course Choice Screen-->
         <scene sceneID="fie-QR-kYd">
