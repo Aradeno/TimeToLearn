@@ -41,6 +41,11 @@
 		84D78312191B6122004D008A /* SettingsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78311191B6122004D008A /* SettingsScreen.m */; };
 		84D78315191B6133004D008A /* NotificationsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78314191B6133004D008A /* NotificationsScreen.m */; };
 		84DEDDB2191B8615000ABCF1 /* CourseInformationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */; };
+		84E17FFC1924B9F1001E13FB /* Bericht.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FF51924B9F1001E13FB /* Bericht.m */; };
+		84E17FFD1924B9F1001E13FB /* Cursus.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FF71924B9F1001E13FB /* Cursus.m */; };
+		84E17FFE1924B9F1001E13FB /* Vraag.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FF91924B9F1001E13FB /* Vraag.m */; };
+		84E17FFF1924B9F1001E13FB /* VraagOptie.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FFB1924B9F1001E13FB /* VraagOptie.m */; };
+		84E180021924BA0F001E13FB /* Gebruiker.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180011924BA0F001E13FB /* Gebruiker.m */; };
 		84F2141E1924323500684158 /* CoursesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2141D1924323500684158 /* CoursesOverview.m */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +112,16 @@
 		84D78314191B6133004D008A /* NotificationsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsScreen.m; sourceTree = "<group>"; };
 		84DEDDB0191B8615000ABCF1 /* CourseInformationScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInformationScreen.h; sourceTree = "<group>"; };
 		84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInformationScreen.m; sourceTree = "<group>"; };
+		84E17FF41924B9F1001E13FB /* Bericht.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bericht.h; sourceTree = "<group>"; };
+		84E17FF51924B9F1001E13FB /* Bericht.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bericht.m; sourceTree = "<group>"; };
+		84E17FF61924B9F1001E13FB /* Cursus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cursus.h; sourceTree = "<group>"; };
+		84E17FF71924B9F1001E13FB /* Cursus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cursus.m; sourceTree = "<group>"; };
+		84E17FF81924B9F1001E13FB /* Vraag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vraag.h; sourceTree = "<group>"; };
+		84E17FF91924B9F1001E13FB /* Vraag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vraag.m; sourceTree = "<group>"; };
+		84E17FFA1924B9F1001E13FB /* VraagOptie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VraagOptie.h; sourceTree = "<group>"; };
+		84E17FFB1924B9F1001E13FB /* VraagOptie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VraagOptie.m; sourceTree = "<group>"; };
+		84E180001924BA0F001E13FB /* Gebruiker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gebruiker.h; sourceTree = "<group>"; };
+		84E180011924BA0F001E13FB /* Gebruiker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gebruiker.m; sourceTree = "<group>"; };
 		84F2141C1924323500684158 /* CoursesOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesOverview.h; sourceTree = "<group>"; };
 		84F2141D1924323500684158 /* CoursesOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesOverview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +197,7 @@
 		84D782C6191B5D15004D008A /* TimeToLearn */ = {
 			isa = PBXGroup;
 			children = (
+				84E17FF31924B87B001E13FB /* Classes */,
 				84C52DB1192461680092C288 /* Pics */,
 				84D782CF191B5D15004D008A /* AppDelegate.h */,
 				84D782D0191B5D15004D008A /* AppDelegate.m */,
@@ -249,6 +265,23 @@
 				84D782E8191B5D15004D008A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84E17FF31924B87B001E13FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84E180001924BA0F001E13FB /* Gebruiker.h */,
+				84E180011924BA0F001E13FB /* Gebruiker.m */,
+				84E17FF41924B9F1001E13FB /* Bericht.h */,
+				84E17FF51924B9F1001E13FB /* Bericht.m */,
+				84E17FF61924B9F1001E13FB /* Cursus.h */,
+				84E17FF71924B9F1001E13FB /* Cursus.m */,
+				84E17FF81924B9F1001E13FB /* Vraag.h */,
+				84E17FF91924B9F1001E13FB /* Vraag.m */,
+				84E17FFA1924B9F1001E13FB /* VraagOptie.h */,
+				84E17FFB1924B9F1001E13FB /* VraagOptie.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,10 +394,14 @@
 				84D78315191B6133004D008A /* NotificationsScreen.m in Sources */,
 				844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */,
 				84D78306191B6031004D008A /* AnswerScreen.m in Sources */,
+				84E17FFD1924B9F1001E13FB /* Cursus.m in Sources */,
+				84E180021924BA0F001E13FB /* Gebruiker.m in Sources */,
 				84D78303191B601E004D008A /* QuestionScreen.m in Sources */,
 				84AA5212191B8A1000602164 /* MagazineScreen.m in Sources */,
 				84DEDDB2191B8615000ABCF1 /* CourseInformationScreen.m in Sources */,
+				84E17FFE1924B9F1001E13FB /* Vraag.m in Sources */,
 				84D782FD191B5FC3004D008A /* CourseScreen.m in Sources */,
+				84E17FFC1924B9F1001E13FB /* Bericht.m in Sources */,
 				84F2141E1924323500684158 /* CoursesOverview.m in Sources */,
 				84D782F7191B5F59004D008A /* LoginScreen.m in Sources */,
 				84AA520F191B8A0400602164 /* VideoScreen.m in Sources */,
@@ -374,6 +411,7 @@
 				84D78312191B6122004D008A /* SettingsScreen.m in Sources */,
 				844ECC74191B8EC300C34CA4 /* QuizzesOverview.m in Sources */,
 				844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */,
+				84E17FFF1924B9F1001E13FB /* VraagOptie.m in Sources */,
 				84AA520C191B896400602164 /* CourseChoiceScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
