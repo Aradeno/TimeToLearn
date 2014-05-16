@@ -14,6 +14,12 @@
 
 @implementation TopNavigationController
 
+@synthesize gebruikers;
+@synthesize cursussen;
+@synthesize vragen;
+@synthesize vraagOpties;
+@synthesize berichten;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +33,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    gebruikers = [[NSMutableArray alloc] init];
+    cursussen = [[NSMutableArray alloc ] init];
+    vragen = [[NSMutableArray alloc] init];
+    vraagOpties = [[NSMutableArray alloc] init];
+    berichten = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning

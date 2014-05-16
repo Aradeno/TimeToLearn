@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TopNavigationController.h"
+#import "AFNetworking.h"
 
 @interface LoginScreen : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *txtGebruikersnaam;

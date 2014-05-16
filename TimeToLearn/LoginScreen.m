@@ -7,7 +7,6 @@
 //
 
 #import "LoginScreen.h"
-#import "TopNavigationController.h"
 
 
 @interface LoginScreen ()
@@ -44,18 +43,34 @@
 }
 - (IBAction)inloggen:(id)sender {
     if([txtGebruikersnaam.text isEqual:@"test"] && [txtWachtwoord.text isEqual:@"test"]){
-    [self performSegueWithIdentifier:@"pushToCoursesOverview" sender:self];
-        TopNavigationController* controller = [[self navigationController] topViewController];
-        
-        controller.cursussen;
-        
-        
-        
+        [self initializeObjects];
+        [self performSegueWithIdentifier:@"pushToCoursesOverview" sender:self];
     } else {
-            UIAlertView *alertView =
-            [[UIAlertView alloc] initWithTitle:@"Inloggegevens" message:[NSString stringWithFormat:@"Combinatie van gebruikersnaam en wachtwoord niet correct."] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-            [alertView show];
+        UIAlertView *alertView =
+        [[UIAlertView alloc] initWithTitle:@"Inloggegevens" message:[NSString stringWithFormat:@"Combinatie van gebruikersnaam en wachtwoord niet correct."] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
     }
+}
+
+- (void)initializeObjects {
+    TopNavigationController* controller = (TopNavigationController*)[[self navigationController] topViewController];
+}
+
+- (void) loadJsonData
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"application/x-javascript"];
+    [manager GET:@"http://athena.fhict.nl/users/i886625/pirates.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+        [self parseJsonData:responseObject];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
+
+- (void) parseJsonData:(id)responseObject
+{
+    
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -66,20 +81,20 @@
         [super touchesBegan:touches withEvent:event];
     }
     
-    if([txtWachtwoord isFirstResponder] && [touch view] != txtWachtwoord){
+    if([txtWachtwoord isFirstResponder] && [touch view] != txtWachtwoord) {
         [txtWachtwoord resignFirstResponder];
         [super touchesBegan:touches withEvent:event];
     }
 }
 
-    /*
-     #pragma mark - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-     {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
-    @end
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
+@end
