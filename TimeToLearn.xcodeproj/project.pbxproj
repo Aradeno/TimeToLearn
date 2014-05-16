@@ -39,8 +39,6 @@
 		84D782FD191B5FC3004D008A /* CourseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D782FC191B5FC3004D008A /* CourseScreen.m */; };
 		84D78303191B601E004D008A /* QuestionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78302191B601E004D008A /* QuestionScreen.m */; };
 		84D78306191B6031004D008A /* AnswerScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78305191B6031004D008A /* AnswerScreen.m */; };
-		84D78312191B6122004D008A /* SettingsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78311191B6122004D008A /* SettingsScreen.m */; };
-		84D78315191B6133004D008A /* NotificationsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D78314191B6133004D008A /* NotificationsScreen.m */; };
 		84DEDDB2191B8615000ABCF1 /* CourseInformationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */; };
 		84E17FFC1924B9F1001E13FB /* Bericht.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FF51924B9F1001E13FB /* Bericht.m */; };
 		84E17FFD1924B9F1001E13FB /* Cursus.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FF71924B9F1001E13FB /* Cursus.m */; };
@@ -57,6 +55,7 @@
 		84E1801F1924C4B7001E13FB /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180151924C4B7001E13FB /* AFURLResponseSerialization.m */; };
 		84E180201924C4B7001E13FB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180171924C4B7001E13FB /* AFURLSessionManager.m */; };
 		84F2141E1924323500684158 /* CoursesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2141D1924323500684158 /* CoursesOverview.m */; };
+		F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFBF1924D1E3002EF722 /* NotificationScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,10 +117,6 @@
 		84D78302191B601E004D008A /* QuestionScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionScreen.m; sourceTree = "<group>"; };
 		84D78304191B6031004D008A /* AnswerScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerScreen.h; sourceTree = "<group>"; };
 		84D78305191B6031004D008A /* AnswerScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerScreen.m; sourceTree = "<group>"; };
-		84D78310191B6122004D008A /* SettingsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsScreen.h; sourceTree = "<group>"; };
-		84D78311191B6122004D008A /* SettingsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsScreen.m; sourceTree = "<group>"; };
-		84D78313191B6133004D008A /* NotificationsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsScreen.h; sourceTree = "<group>"; };
-		84D78314191B6133004D008A /* NotificationsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsScreen.m; sourceTree = "<group>"; };
 		84DEDDB0191B8615000ABCF1 /* CourseInformationScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInformationScreen.h; sourceTree = "<group>"; };
 		84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInformationScreen.m; sourceTree = "<group>"; };
 		84E17FF41924B9F1001E13FB /* Bericht.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bericht.h; sourceTree = "<group>"; };
@@ -155,6 +150,8 @@
 		84E180171924C4B7001E13FB /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		84F2141C1924323500684158 /* CoursesOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesOverview.h; sourceTree = "<group>"; };
 		84F2141D1924323500684158 /* CoursesOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesOverview.m; sourceTree = "<group>"; };
+		F566AFBE1924D1E3002EF722 /* NotificationScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScreen.h; sourceTree = "<group>"; };
+		F566AFBF1924D1E3002EF722 /* NotificationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,10 +241,6 @@
 				84D78302191B601E004D008A /* QuestionScreen.m */,
 				84D78304191B6031004D008A /* AnswerScreen.h */,
 				84D78305191B6031004D008A /* AnswerScreen.m */,
-				84D78310191B6122004D008A /* SettingsScreen.h */,
-				84D78311191B6122004D008A /* SettingsScreen.m */,
-				84D78313191B6133004D008A /* NotificationsScreen.h */,
-				84D78314191B6133004D008A /* NotificationsScreen.m */,
 				84DEDDB0191B8615000ABCF1 /* CourseInformationScreen.h */,
 				84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */,
 				84AA520A191B896400602164 /* CourseChoiceScreen.h */,
@@ -268,6 +261,8 @@
 				84C7DBC819243F440036690C /* CoursesOverviewTableViewCell.m */,
 				8461F8981924C90A00884C2F /* TopNavigationController.h */,
 				8461F8991924C90A00884C2F /* TopNavigationController.m */,
+				F566AFBE1924D1E3002EF722 /* NotificationScreen.h */,
+				F566AFBF1924D1E3002EF722 /* NotificationScreen.m */,
 			);
 			path = TimeToLearn;
 			sourceTree = "<group>";
@@ -452,9 +447,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E1801D1924C4B7001E13FB /* AFURLConnectionOperation.m in Sources */,
-				84D78315191B6133004D008A /* NotificationsScreen.m in Sources */,
 				844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */,
 				84E180181924C4B7001E13FB /* AFHTTPRequestOperation.m in Sources */,
+				F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */,
 				84E1801F1924C4B7001E13FB /* AFURLResponseSerialization.m in Sources */,
 				84D78306191B6031004D008A /* AnswerScreen.m in Sources */,
 				84E17FFD1924B9F1001E13FB /* Cursus.m in Sources */,
@@ -477,7 +472,6 @@
 				84D782D1191B5D15004D008A /* AppDelegate.m in Sources */,
 				84D782CD191B5D15004D008A /* main.m in Sources */,
 				84C7DBC919243F440036690C /* CoursesOverviewTableViewCell.m in Sources */,
-				84D78312191B6122004D008A /* SettingsScreen.m in Sources */,
 				8461F89A1924C90A00884C2F /* TopNavigationController.m in Sources */,
 				844ECC74191B8EC300C34CA4 /* QuizzesOverview.m in Sources */,
 				844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */,
