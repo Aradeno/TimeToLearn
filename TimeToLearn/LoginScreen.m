@@ -54,23 +54,45 @@
 
 - (void)initializeObjects {
     TopNavigationController* controller = (TopNavigationController*)[[self navigationController] topViewController];
+    Class classGebruiker = [Gebruiker class];
+    Class classBericht = [Bericht class];
+    Class classCursus = [Cursus class];
+    Class classVraag = [Vraag class];
+    Class classVraagOptie = [VraagOptie class];
+    
+    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/gebruikers.php" objectType:classGebruiker];
 }
 
-- (void) loadJsonData
+- (void) loadJsonData:(NSString*)url objectType:(Class)type
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"application/x-javascript"];
-    [manager GET:@"http://athena.fhict.nl/users/i886625/pirates.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
+    [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
-        [self parseJsonData:responseObject];
+        [self parseJsonData:responseObject objectType:type];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
 }
 
-- (void) parseJsonData:(id)responseObject
+- (void) parseJsonData:(id)responseObject objectType:(Class)type
 {
+    NSArray* dictObjects = [responseObject allObjects];
+    NSDictionary *dictionary = [responseObject dictionaryForKey:@"user"];
+    NSDictionary* allSubObjects = [dictObjects objectAtIndex:0];
+    //NSArray* dictSubObjects = [allSubObjects allKeys];
     
+    /*for(NSDictionary* dict in responseObject){
+        
+    }*/
+    
+    //keys = [nsdict allKeys];
+    for(id dict in allSubObjects){
+        NSLog([[dict class] description]);
+        for(id dictin in dict){
+            NSLog([[dictin class] description]);
+        }
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

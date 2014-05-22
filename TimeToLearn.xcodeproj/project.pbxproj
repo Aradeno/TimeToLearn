@@ -75,6 +75,7 @@
 		844ECC76191B903300C34CA4 /* DiscussionsOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionsOverview.m; sourceTree = "<group>"; };
 		844ECC78191B91A600C34CA4 /* DiscussionScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionScreen.h; sourceTree = "<group>"; };
 		844ECC79191B91A600C34CA4 /* DiscussionScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionScreen.m; sourceTree = "<group>"; };
+		8452E99319269F050078E399 /* Objects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objects.h; sourceTree = "<group>"; };
 		8461F8981924C90A00884C2F /* TopNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopNavigationController.h; path = ../TopNavigationController.h; sourceTree = "<group>"; };
 		8461F8991924C90A00884C2F /* TopNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopNavigationController.m; path = ../TopNavigationController.m; sourceTree = "<group>"; };
 		84AA520A191B896400602164 /* CourseChoiceScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseChoiceScreen.h; sourceTree = "<group>"; };
@@ -309,6 +310,7 @@
 				84E17FF91924B9F1001E13FB /* Vraag.m */,
 				84E17FFA1924B9F1001E13FB /* VraagOptie.h */,
 				84E17FFB1924B9F1001E13FB /* VraagOptie.m */,
+				8452E99319269F050078E399 /* Objects.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

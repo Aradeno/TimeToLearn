@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TopNavigationController.h"
+#import "Objects.h"
 #import "AFNetworking.h"
 
 @interface LoginScreen : UIViewController
