@@ -21,6 +21,13 @@
     NSDictionary *text = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIColor whiteColor], NSForegroundColorAttributeName, nil];
     
     [[UINavigationBar appearance] setTitleTextAttributes:text];
+    
+    //handle launching notification
+    UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if(localNotification){
+        //set icon badge number to zero
+        application.applicationIconBadgeNumber=0;
+    }
 
 
     // Override point for customization after application launch.
