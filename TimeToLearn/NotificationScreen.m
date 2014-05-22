@@ -9,6 +9,7 @@
 #import "NotificationScreen.h"
 
 @interface NotificationScreen ()
+- (IBAction)ClearAll:(id)sender;
 
 @end
 
@@ -32,6 +33,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTable) name:@"reloadData" object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,16 +47,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -62,10 +63,19 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    NSArray *localNotifications = [[UIApplication sharedApplication]scheduledLocalNotifications];
+    UILocalNotification *localNotification = [localNotifications objectAtIndex:indexPath.row];
+    
+    //display notication info
+    [cell.detailTextLabel setText:localNotification.alertBody];
+    [cell.textLabel setText:[localNotification.fireDate description]];
     
     return cell;
 }
-
+-(void)reloadTable
+{
+    [self.tableView reloadData];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -117,4 +127,9 @@
 
  */
 
+- (IBAction)ClearAll:(id)sender {
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+    
+}
 @end

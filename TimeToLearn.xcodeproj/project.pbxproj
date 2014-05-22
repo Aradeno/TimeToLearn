@@ -56,6 +56,7 @@
 		84E180201924C4B7001E13FB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180171924C4B7001E13FB /* AFURLSessionManager.m */; };
 		84F2141E1924323500684158 /* CoursesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2141D1924323500684158 /* CoursesOverview.m */; };
 		F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFBF1924D1E3002EF722 /* NotificationScreen.m */; };
+		F566AFC3192D6A97002EF722 /* AddNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFC2192D6A97002EF722 /* AddNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,8 @@
 		84F2141D1924323500684158 /* CoursesOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesOverview.m; sourceTree = "<group>"; };
 		F566AFBE1924D1E3002EF722 /* NotificationScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScreen.h; sourceTree = "<group>"; };
 		F566AFBF1924D1E3002EF722 /* NotificationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScreen.m; sourceTree = "<group>"; };
+		F566AFC1192D6A97002EF722 /* AddNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNotification.h; sourceTree = "<group>"; };
+		F566AFC2192D6A97002EF722 /* AddNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +266,8 @@
 				8461F8991924C90A00884C2F /* TopNavigationController.m */,
 				F566AFBE1924D1E3002EF722 /* NotificationScreen.h */,
 				F566AFBF1924D1E3002EF722 /* NotificationScreen.m */,
+				F566AFC1192D6A97002EF722 /* AddNotification.h */,
+				F566AFC2192D6A97002EF722 /* AddNotification.m */,
 			);
 			path = TimeToLearn;
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 				84C7DBC919243F440036690C /* CoursesOverviewTableViewCell.m in Sources */,
 				8461F89A1924C90A00884C2F /* TopNavigationController.m in Sources */,
 				844ECC74191B8EC300C34CA4 /* QuizzesOverview.m in Sources */,
+				F566AFC3192D6A97002EF722 /* AddNotification.m in Sources */,
 				844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */,
 				84E17FFF1924B9F1001E13FB /* VraagOptie.m in Sources */,
 				84AA520C191B896400602164 /* CourseChoiceScreen.m in Sources */,
