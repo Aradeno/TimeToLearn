@@ -81,16 +81,16 @@
     TopNavigationController* controller = (TopNavigationController*)[[self navigationController] topViewController];
     NSMutableArray* list;
     
-    if(type == [Gebruiker class])
-        list = controller.gebruikers;
-    else if(type == [Bericht class])
-        list = controller.berichten;
-    else if(type == [Cursus class])
-        list = controller.cursussen;
-    else if(type == [Vraag class])
-        list = controller.vragen;
-    else if(type == [VraagOptie class])
-        list = controller.vraagOpties;
+//    if(type == [Gebruiker class])
+//        list = controller.gebruikers;
+//    else if(type == [Bericht class])
+//        list = controller.berichten;
+//    else if(type == [Cursus class])
+//        list = controller.cursussen;
+//    else if(type == [Vraag class])
+//        list = controller.vragen;
+//    else if(type == [VraagOptie class])
+//        list = controller.vraagOpties;
     
     NSMutableArray* gebruikers;
     NSMutableArray* cursussen;
@@ -106,7 +106,7 @@
             [keyValues addObject:[nsdict objectForKey:[keys objectAtIndex:i]]];
         }
         [objWithKeys setKeyValues:keyValues];
-        [list addObject:objWithKeys];
+        //[list addObject:objWithKeys];
     }
 }
 
