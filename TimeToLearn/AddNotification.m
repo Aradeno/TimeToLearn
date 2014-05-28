@@ -47,6 +47,8 @@
     
     localNotification.alertAction=@"Show me!";
     
+    [NSTimeZone resetSystemTimeZone];
+    
     localNotification.timeZone=[NSTimeZone defaultTimeZone];
     localNotification.applicationIconBadgeNumber=[[UIApplication sharedApplication]applicationIconBadgeNumber]+1;
     //ALs hij moet herhalen (iedere dag)
