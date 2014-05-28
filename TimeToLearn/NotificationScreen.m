@@ -74,9 +74,10 @@
     
     if(localNotification.repeatInterval ||localNotification.repeatInterval)
     {
-        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 5, 5)];
-        imgView.image = [UIImage imageNamed:@"repeat.png"];
-        cell.imageView.image = imgView.image;
+        notificatieBeschrijving = @"repeat";
+//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 5, 5)];
+//        imgView.image = [UIImage imageNamed:@"repeat.png"];
+//        cell.imageView.image = imgView.image;
     }
     
     [cell.textLabel setText:notificatieBeschrijving];
