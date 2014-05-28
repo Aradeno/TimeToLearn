@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ObjectWithKeys.h"
 
 @interface TopNavigationController : UINavigationController
 

@@ -54,13 +54,14 @@
 
 - (void)initializeObjects {
     TopNavigationController* controller = (TopNavigationController*)[[self navigationController] topViewController];
-    Class classGebruiker = [Gebruiker class];
+    //Class classGebruiker = [Gebruiker class];
     Class classBericht = [Bericht class];
     Class classCursus = [Cursus class];
     Class classVraag = [Vraag class];
     Class classVraagOptie = [VraagOptie class];
     
-    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/gebruikers.php" objectType:classGebruiker];
+    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/gebruikers.php" objectType:[Gebruiker class]];
+     
     //[self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/vraag.php" objectType:classVraag];
 }
 
@@ -78,7 +79,8 @@
 
 - (void) parseJsonData:(id)responseObject objectType:(Class)type
 {
-    TopNavigationController* controller = (TopNavigationController*)[[self navigationController] topViewController];
+    TopNavigationController* controller = (TopNavigationController*)[self parentViewController];
+    NSLog(@"%@",[self parentViewController]);
     NSMutableArray* list;
     
 //    if(type == [Gebruiker class])
@@ -92,18 +94,13 @@
 //    else if(type == [VraagOptie class])
 //        list = controller.vraagOpties;
     
-    NSMutableArray* gebruikers;
-    NSMutableArray* cursussen;
-    NSMutableArray* vragen;
-    NSMutableArray* vraagOpties;
-    NSMutableArray* berichten;
-    
     for(NSDictionary* nsdict in responseObject){
         id <ObjectWithKeys> objWithKeys = [[type alloc] init];
         NSArray *keys = [objWithKeys getKeys];
         NSMutableArray *keyValues = [[NSMutableArray alloc] init];
         for(NSInteger i = 0; i < keys.count; i++){
             [keyValues addObject:[nsdict objectForKey:[keys objectAtIndex:i]]];
+            NSLog(@"%@", [keyValues objectAtIndex:i]);
         }
         [objWithKeys setKeyValues:keyValues];
         //[list addObject:objWithKeys];
