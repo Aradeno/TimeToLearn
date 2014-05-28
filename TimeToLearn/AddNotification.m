@@ -30,6 +30,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [repeatSwitch setOn:NO animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

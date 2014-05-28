@@ -72,9 +72,9 @@
     [cell.detailTextLabel setText:/*localNotification.alertBody*/[localNotification.fireDate description]];
     NSString *notificatieBeschrijving =[[localNotification.fireDate description] substringToIndex:16];
     
-    if(localNotification.repeatInterval)
+    if(localNotification.repeatInterval ||localNotification.repeatInterval)
     {
-        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 5, 5)];
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 5, 5)];
         imgView.image = [UIImage imageNamed:@"repeat.png"];
         cell.imageView.image = imgView.image;
     }
