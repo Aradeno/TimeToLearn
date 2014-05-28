@@ -7,15 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ObjectWithKeys.h"
 
-@interface Gebruiker : NSObject
+@interface Gebruiker : NSObject <ObjectWithKeys>
 
+@property NSString* userID;
 @property NSString* gebruikersnaam;
 @property NSString* wachtwoord;
 @property NSInteger score;
 @property NSMutableArray* cursussen;
 @property NSMutableArray* berichten;
+@property NSArray *keys;
 
--(void) addScore;
+
+- (void) setKeyValues:(NSMutableArray *)values;
+- (NSArray*) getKeys;
+- (void) addScore;
 
 @end
