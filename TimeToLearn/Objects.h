@@ -13,4 +13,5 @@
     #import "Cursus.h"
     #import "Vraag.h"
     #import "VraagOptie.h"
+    #import "ObjectWithKeys.h"
 #endif

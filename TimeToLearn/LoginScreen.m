@@ -61,6 +61,7 @@
     Class classVraagOptie = [VraagOptie class];
     
     [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/gebruikers.php" objectType:classGebruiker];
+    //[self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/vraag.php" objectType:classVraag];
 }
 
 - (void) loadJsonData:(NSString*)url objectType:(Class)type
@@ -77,21 +78,35 @@
 
 - (void) parseJsonData:(id)responseObject objectType:(Class)type
 {
-    NSArray* dictObjects = [responseObject allObjects];
-    NSDictionary *dictionary = [responseObject dictionaryForKey:@"user"];
-    NSDictionary* allSubObjects = [dictObjects objectAtIndex:0];
-    //NSArray* dictSubObjects = [allSubObjects allKeys];
+    TopNavigationController* controller = (TopNavigationController*)[[self navigationController] topViewController];
+    NSMutableArray* list;
     
-    /*for(NSDictionary* dict in responseObject){
-        
-    }*/
+    if(type == [Gebruiker class])
+        list = controller.gebruikers;
+    else if(type == [Bericht class])
+        list = controller.berichten;
+    else if(type == [Cursus class])
+        list = controller.cursussen;
+    else if(type == [Vraag class])
+        list = controller.vragen;
+    else if(type == [VraagOptie class])
+        list = controller.vraagOpties;
     
-    //keys = [nsdict allKeys];
-    for(id dict in allSubObjects){
-        NSLog([[dict class] description]);
-        for(id dictin in dict){
-            NSLog([[dictin class] description]);
+    NSMutableArray* gebruikers;
+    NSMutableArray* cursussen;
+    NSMutableArray* vragen;
+    NSMutableArray* vraagOpties;
+    NSMutableArray* berichten;
+    
+    for(NSDictionary* nsdict in responseObject){
+        id <ObjectWithKeys> objWithKeys = [[type alloc] init];
+        NSArray *keys = [objWithKeys getKeys];
+        NSMutableArray *keyValues = [[NSMutableArray alloc] init];
+        for(NSInteger i = 0; i < keys.count; i++){
+            [keyValues addObject:[nsdict objectForKey:[keys objectAtIndex:i]]];
         }
+        [objWithKeys setKeyValues:keyValues];
+        [list addObject:objWithKeys];
     }
 }
 

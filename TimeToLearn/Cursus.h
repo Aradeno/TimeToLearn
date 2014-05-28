@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ObjectWithKeys.h"
 
 @interface Cursus : NSObject
 @property NSString* cursusId;
@@ -14,4 +15,9 @@
 @property NSMutableArray* vragen;
 @property NSString* identifier;
 @property NSString* imgURL;
+@property NSArray *keys;
+
+- (void) setKeyValues:(NSMutableArray *)values;
+- (NSArray*) getKeys;
+
 @end

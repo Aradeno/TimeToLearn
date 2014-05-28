@@ -119,6 +119,7 @@
 		84D78302191B601E004D008A /* QuestionScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionScreen.m; sourceTree = "<group>"; };
 		84D78304191B6031004D008A /* AnswerScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerScreen.h; sourceTree = "<group>"; };
 		84D78305191B6031004D008A /* AnswerScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerScreen.m; sourceTree = "<group>"; };
+		84D96852192E00700067632A /* ObjectWithKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectWithKeys.h; sourceTree = "<group>"; };
 		84DEDDB0191B8615000ABCF1 /* CourseInformationScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInformationScreen.h; sourceTree = "<group>"; };
 		84DEDDB1191B8615000ABCF1 /* CourseInformationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInformationScreen.m; sourceTree = "<group>"; };
 		84E17FF41924B9F1001E13FB /* Bericht.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bericht.h; sourceTree = "<group>"; };
@@ -316,6 +317,7 @@
 				84E17FFA1924B9F1001E13FB /* VraagOptie.h */,
 				84E17FFB1924B9F1001E13FB /* VraagOptie.m */,
 				8452E99319269F050078E399 /* Objects.h */,
+				84D96852192E00700067632A /* ObjectWithKeys.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

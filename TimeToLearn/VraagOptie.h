@@ -7,8 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ObjectWithKeys.h"
 
 @interface VraagOptie : NSObject
 @property NSInteger vraagOptieId;
 @property NSString* antwoord;
+@property NSArray *keys;
+
+- (void) setKeyValues:(NSMutableArray *)values;
+- (NSArray*) getKeys;
+
 @end
