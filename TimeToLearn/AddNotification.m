@@ -65,8 +65,6 @@
     //dismiss the viewcontroller
     [self dismissViewControllerAnimated:YES completion:nil];
     
-     
-    
 }
 
 - (IBAction)btnCancel:(id)sender {

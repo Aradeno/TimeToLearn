@@ -10,10 +10,11 @@
 
 @interface NotificationScreen ()
 - (IBAction)ClearAll:(id)sender;
-
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation NotificationScreen
+@synthesize tableView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -63,19 +64,29 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    NSArray *localNotifications = [[UIApplication sharedApplication]scheduledLocalNotifications];
+    localNotifications = [[UIApplication sharedApplication]scheduledLocalNotifications];
     UILocalNotification *localNotification = [localNotifications objectAtIndex:indexPath.row];
     
     
     //display notication info
     [cell.detailTextLabel setText:/*localNotification.alertBody*/[localNotification.fireDate description]];
     NSString *notificatieBeschrijving =[[localNotification.fireDate description] substringToIndex:16];
+    
+    if(localNotification.repeatInterval)
+    {
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 5, 5)];
+        imgView.image = [UIImage imageNamed:@"repeat.png"];
+        cell.imageView.image = imgView.image;
+    }
+    
     [cell.textLabel setText:notificatieBeschrijving];
     
     return cell;
 }
 -(void)reloadTable
 {
+    
+    localNotifications = [[UIApplication sharedApplication]scheduledLocalNotifications];
     [self.tableView reloadData];
 }
 /*
@@ -128,10 +139,45 @@
 }
 
  */
-
 - (IBAction)ClearAll:(id)sender {
-    [[UIApplication sharedApplication] cancelAllLocalNotifications];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+    if(!localNotifications||!localNotifications.count)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Geen notificatie geselecteerd."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    else
+    {
+        NSIndexPath *selectedRowPath = [self.tableView indexPathForSelectedRow];
+        int rowIndex = selectedRowPath.row;
+        UILocalNotification *selectedObject = [localNotifications objectAtIndex:rowIndex];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Verwijder notificatie?"
+                                                   message: [[selectedObject.fireDate description] substringToIndex:16]
+                                                  delegate: self
+                                         cancelButtonTitle:@"Annuleer"
+                                         otherButtonTitles:@"OK",nil];
+    
+    
+        [alert show];
+    }
     
 }
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+    {
+        if(buttonIndex==1)
+        {
+            //give deletion code here
+            
+            NSIndexPath *selectedRowPath = [self.tableView indexPathForSelectedRow];
+            int rowIndex = selectedRowPath.row;
+            UILocalNotification *selectedObject = [localNotifications objectAtIndex:rowIndex];
+            [[UIApplication sharedApplication] cancelLocalNotification:selectedObject];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+        }
+        
+    }
 @end

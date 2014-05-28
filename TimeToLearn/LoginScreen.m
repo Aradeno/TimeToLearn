@@ -83,16 +83,16 @@
     NSLog(@"%@",[self parentViewController]);
     NSMutableArray* list;
     
-    if(type == [Gebruiker class])
-        list = controller.gebruikers;
-    else if(type == [Bericht class])
-        list = controller.berichten;
-    else if(type == [Cursus class])
-        list = controller.cursussen;
-    else if(type == [Vraag class])
-        list = controller.vragen;
-    else if(type == [VraagOptie class])
-        list = controller.vraagOpties;
+//    if(type == [Gebruiker class])
+//        list = controller.gebruikers;
+//    else if(type == [Bericht class])
+//        list = controller.berichten;
+//    else if(type == [Cursus class])
+//        list = controller.cursussen;
+//    else if(type == [Vraag class])
+//        list = controller.vragen;
+//    else if(type == [VraagOptie class])
+//        list = controller.vraagOpties;
     
     for(NSDictionary* nsdict in responseObject){
         id <ObjectWithKeys> objWithKeys = [[type alloc] init];
@@ -103,7 +103,7 @@
             NSLog(@"%@", [keyValues objectAtIndex:i]);
         }
         [objWithKeys setKeyValues:keyValues];
-        [list addObject:objWithKeys];
+        //[list addObject:objWithKeys];
     }
 }
 

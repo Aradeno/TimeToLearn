@@ -330,6 +330,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="bXG-uy-qbc" id="vy8-iH-6MD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGC-Nb-8D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
