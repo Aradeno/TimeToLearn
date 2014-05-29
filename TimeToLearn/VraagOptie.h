@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "ObjectWithKeys.h"
 
-@interface VraagOptie : NSObject
+@interface VraagOptie : NSObject <ObjectWithKeys>
+
 @property NSInteger vraagOptieId;
 @property NSString* antwoord;
+@property NSMutableArray* 
 @property NSArray *keys;
 
 - (void) setKeyValues:(NSMutableArray *)values;

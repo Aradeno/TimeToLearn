@@ -10,22 +10,22 @@
 
 @implementation Gebruiker
 
--(void)addScore
+- (void)addScore
 {
     self.score++;
     
 }
 
--(id) init
+- (id) init
 {
     if(self == [super init]) {
-        self.keys = [NSArray arrayWithObjects:@"user_id",@"naam",@"wachtwoord",@"score",nil];
+        self.keys = [NSArray arrayWithObjects:@"user_id", @"naam", @"wachtwoord", @"score",nil];
     }
     
     return self;
 }
 
--(void)setKeyValues:(NSMutableArray*)values
+- (void)setKeyValues:(NSMutableArray*)values
 {
         self.userID = [values objectAtIndex:0];
         self.gebruikersnaam = [values objectAtIndex:1];

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ObjectWithKeys.h"
+#import "Objects.h"
 
 @interface TopNavigationController : UINavigationController
 
@@ -16,5 +16,7 @@
 @property NSMutableArray* vragen;
 @property NSMutableArray* vraagOpties;
 @property NSMutableArray* berichten;
+
+- (void)addToList:(id <ObjectWithKeys>) objWithKeys;
 
 @end

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ObjectWithKeys.h"
 
-@interface Cursus : NSObject
+@interface Cursus : NSObject <ObjectWithKeys>
 @property NSString* cursusId;
 @property NSString* naamCursus;
 @property NSMutableArray* vragen;

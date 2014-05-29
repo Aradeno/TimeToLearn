@@ -40,6 +40,20 @@
     berichten = [[NSMutableArray alloc] init];
 }
 
+- (void)addToList:(id<ObjectWithKeys>)objWithKeys
+{
+    if([objWithKeys isKindOfClass:[Gebruiker class]])
+        [gebruikers addObject:(Gebruiker*)objWithKeys];
+    else if([objWithKeys isKindOfClass:[Cursus class]])
+        [cursussen addObject:(Cursus*)objWithKeys];
+    else if([objWithKeys isKindOfClass:[Vraag class]])
+        [vragen addObject:(Vraag*)objWithKeys];
+    else if([objWithKeys isKindOfClass:[VraagOptie class]])
+        [vraagOpties addObject:(VraagOptie*)objWithKeys];
+    else if([objWithKeys isKindOfClass:[Bericht class]])
+        [berichten addObject:(Bericht*)objWithKeys];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

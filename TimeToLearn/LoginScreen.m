@@ -52,17 +52,9 @@
     }
 }
 
-- (void)initializeObjects {
-    TopNavigationController* controller = (TopNavigationController*)[[self navigationController] topViewController];
-    //Class classGebruiker = [Gebruiker class];
-    Class classBericht = [Bericht class];
-    Class classCursus = [Cursus class];
-    Class classVraag = [Vraag class];
-    Class classVraagOptie = [VraagOptie class];
-    
+- (void)initializeObjects {    
     [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/gebruikers.php" objectType:[Gebruiker class]];
-     
-    //[self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/vraag.php" objectType:classVraag];
+    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/vraag.php" objectType:[Vraag class]];
 }
 
 - (void) loadJsonData:(NSString*)url objectType:(Class)type
@@ -80,19 +72,6 @@
 - (void) parseJsonData:(id)responseObject objectType:(Class)type
 {
     TopNavigationController* controller = (TopNavigationController*)[self parentViewController];
-    NSLog(@"%@",[self parentViewController]);
-    NSMutableArray* list;
-    
-    if(type == [Gebruiker class])
-        list = controller.gebruikers;
-    else if(type == [Bericht class])
-        list = controller.berichten;
-    else if(type == [Cursus class])
-        list = controller.cursussen;
-    else if(type == [Vraag class])
-        list = controller.vragen;
-    else if(type == [VraagOptie class])
-        list = controller.vraagOpties;
     
     for(NSDictionary* nsdict in responseObject){
         id <ObjectWithKeys> objWithKeys = [[type alloc] init];
@@ -100,10 +79,10 @@
         NSMutableArray *keyValues = [[NSMutableArray alloc] init];
         for(NSInteger i = 0; i < keys.count; i++){
             [keyValues addObject:[nsdict objectForKey:[keys objectAtIndex:i]]];
-            NSLog(@"%@", [keyValues objectAtIndex:i]);
+            NSLog(@"%@:%@", [keys objectAtIndex:i], [keyValues objectAtIndex:i]);
         }
         [objWithKeys setKeyValues:keyValues];
-        [list addObject:objWithKeys];
+        [controller addToList:objWithKeys];
     }
 }
 
