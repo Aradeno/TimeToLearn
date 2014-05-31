@@ -7,7 +7,6 @@
 //
 
 #import "CoursesOverview.h"
-#import "CoursesOverviewTableViewCell.h"
 
 @interface CoursesOverview ()
 
@@ -56,7 +55,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 6;
+    return self.currentGebruiker.cursussen.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,34 +63,10 @@
     CoursesOverviewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"courseCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
     [cell.courseTitle setAdjustsFontSizeToFitWidth:YES];
-    switch(indexPath.row){
-        case 0:
-            cell.courseTitle.text = @"Cursus Projectmanagement";
-            [cell.courseImage setImage:[UIImage imageNamed:@"management.png"]];
-            break;
-        case 1:
-            cell.courseTitle.text = @"Cursus Omdenken";
-            [cell.courseImage setImage:[UIImage imageNamed:@"omdenken.png"]];
-            break;
-        case 2:
-            cell.courseTitle.text = @"Powerpoint 2013";
-            [cell.courseImage setImage:[UIImage imageNamed:@"powerpoint.png"]];
-            break;
-        case 3:
-            cell.courseTitle.text = @"Klantgericht telefoneren";
-            [cell.courseImage setImage:[UIImage imageNamed:@"telefoneren.png"]];
-            break;
-        case 4:
-            cell.courseTitle.text = @"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-            [cell.courseImage setImage:[UIImage imageNamed:@"doge.png"]];
-            break;
-        case 5:
-            cell.courseTitle.text = @"Adviserend verkopen";
-            [cell.courseImage setImage:[UIImage imageNamed:@"selling.png"]];
-            break;
-    }
+    Cursus* cursus = [self.currentGebruiker.cursussen objectAtIndex:0];
+    cell.courseTitle.text = cursus.naamCursus;
+    
     return cell;
 }
 
@@ -134,15 +109,16 @@
  }
  */
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    NSIndexPath *nsip = [self.tableView indexPathForSelectedRow];
+    CourseInformationScreen* cis = [segue destinationViewController];
+    cis.currentCursus = [self.currentGebruiker.cursussen objectAtIndex:nsip.row];
+}
 
 @end

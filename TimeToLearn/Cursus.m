@@ -13,7 +13,9 @@
 - (id) init
 {
     if(self == [super init]) {
-        self.keys = [NSArray arrayWithObjects:@"cursus_id", @"naam", @"idenifier", @"image_url",nil];
+        self.keys = [NSArray arrayWithObjects:@"cursus_id", @"naam", @"identifier", @"image_url", nil];
+        self.lessen = [[NSMutableArray alloc] init];
+        self.berichten = [[NSMutableArray alloc] init];
     }
     
     return self;

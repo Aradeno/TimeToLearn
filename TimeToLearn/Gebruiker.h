@@ -11,7 +11,7 @@
 
 @interface Gebruiker : NSObject <ObjectWithKeys>
 
-@property NSString* userID;
+@property NSString* userId;
 @property NSString* gebruikersnaam;
 @property NSString* wachtwoord;
 @property NSInteger score;

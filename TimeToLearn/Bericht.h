@@ -12,9 +12,12 @@
 @interface Bericht : NSObject <ObjectWithKeys>
 
 @property NSString* berichtId;
-@property NSString* berichtTekst;
-@property NSString* berichtTitel;
 @property NSString* userId;
+@property NSString* cursusId;
+@property NSString* reactieOpId;
+@property NSString* berichtTitel;
+@property NSString* berichtTekst;
+@property NSString* datumTijd;
 @property NSMutableArray* reacties;
 @property NSArray *keys;
 

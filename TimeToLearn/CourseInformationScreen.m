@@ -32,6 +32,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //self.navigationController.navigationBar.translucent = NO;
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,26 +49,59 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 4;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    CourseInformationScreenTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"courseInformationCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    [cell.informationTitle setAdjustsFontSizeToFitWidth:YES];
+    switch(indexPath.row){
+        case 0:
+            cell.informationTitle.text = @"Start";
+            [cell.informationIcon setImage:[UIImage imageNamed:@"start.png"]];
+            break;
+        case 1:
+            cell.informationTitle.text = @"Overzicht";
+            [cell.informationIcon setImage:[UIImage imageNamed:@"overzicht.png"]];
+            break;
+        case 2:
+            cell.informationTitle.text = @"Discussies";
+            [cell.informationIcon setImage:[UIImage imageNamed:@"berichten.png"]];
+            break;
+        case 3:
+            cell.informationTitle.text = @"Ranking";
+            [cell.informationIcon setImage:[UIImage imageNamed:@"ranking.png"]];
+            break;
+    }
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch(indexPath.row){
+        case 0:
+            [self performSegueWithIdentifier:@"pushToCourseChoiceScreen" sender:self];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"pushToQuizzesOverview" sender:self];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"pushToDiscussionsOverview" sender:self];
+            break;
+        case 3:
+            break;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -20,6 +20,8 @@
 {
     if(self == [super init]) {
         self.keys = [NSArray arrayWithObjects:@"user_id", @"naam", @"wachtwoord", @"score",nil];
+        self.cursussen = [[NSMutableArray alloc] init];
+        self.berichten = [[NSMutableArray alloc] init];
     }
     
     return self;
@@ -27,7 +29,7 @@
 
 - (void)setKeyValues:(NSMutableArray*)values
 {
-        self.userID = [values objectAtIndex:0];
+        self.userId = [values objectAtIndex:0];
         self.gebruikersnaam = [values objectAtIndex:1];
         self.wachtwoord = [values objectAtIndex:2];
         self.score = [[values objectAtIndex:3] integerValue];

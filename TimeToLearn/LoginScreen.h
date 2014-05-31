@@ -10,11 +10,15 @@
 #import "TopNavigationController.h"
 #import "Objects.h"
 #import "AFNetworking.h"
+#import "CoursesOverview.h"
 
 @interface LoginScreen : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *txtGebruikersnaam;
 @property (weak, nonatomic) IBOutlet UITextField *txtWachtwoord;
 @property (weak, nonatomic) IBOutlet UIButton *btnLogIn;
+
+@property Gebruiker* currentGebruiker;
+
 - (IBAction)inloggen:(id)sender;
 
 @end

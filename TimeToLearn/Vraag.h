@@ -12,14 +12,15 @@
 @interface Vraag : NSObject <ObjectWithKeys>
 
 @property NSString* vraagId;
-@property NSString* cursusId;
-@property NSString* titel;
+@property NSString* lesId;
+@property NSInteger index;
 @property NSString* videoTitel;
 @property NSString* videoURL;
 @property NSString* magazineTitel;
 @property NSString* quizvraag;
+@property NSString* antwoord;
 @property NSMutableArray* magazines;
-@property NSMutableArray* vraagOpties;
+@property NSMutableArray* opties;
 @property NSArray *keys;
 
 - (void) setKeyValues:(NSMutableArray *)values;

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
+#import "CoursesOverviewTableViewCell.h"
+#import "CourseInformationScreen.h"
 
 @interface CoursesOverview : UITableViewController
+
+@property Gebruiker* currentGebruiker;
 
 @end
