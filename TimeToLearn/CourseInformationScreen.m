@@ -141,7 +141,6 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -149,7 +148,22 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    NSIndexPath *nsindexPath = [self.tableView indexPathForSelectedRow];
+    
+    switch(nsindexPath.row){
+        case 0:
+            [self performSegueWithIdentifier:@"pushToCourseChoiceScreen" sender:self];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"pushToQuizzesOverview" sender:self];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"pushToDiscussionsOverview" sender:self];
+            break;
+        case 3:
+            break;
+    }
 }
-*/
 
 @end

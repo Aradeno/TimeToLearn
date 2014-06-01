@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Objects.h"
 #import "CourseInformationScreenTableViewCell.h"
+#import "CourseChoiceScreen.h"
+#import "QuizzesOverview.h"
+#import "DiscussionScreen.h"
 
 @interface CourseInformationScreen : UITableViewController
 
