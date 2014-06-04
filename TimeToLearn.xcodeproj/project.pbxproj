@@ -33,6 +33,9 @@
 		84C52DBE1924618F0092C288 /* selling@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C52DB71924618F0092C288 /* selling@2x.png */; };
 		84C52DBF1924618F0092C288 /* telefoneren@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C52DB81924618F0092C288 /* telefoneren@2x.png */; };
 		84C7DBC919243F440036690C /* CoursesOverviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7DBC819243F440036690C /* CoursesOverviewTableViewCell.m */; };
+		84D47DF4193F5714001FAD7A /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D47DF3193F5714001FAD7A /* logo@2x.png */; };
+		84D47DF6193F5720001FAD7A /* back_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D47DF5193F5720001FAD7A /* back_btn@2x.png */; };
+		84D47DF8193F5778001FAD7A /* account.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D47DF7193F5778001FAD7A /* account.png */; };
 		84D782C1191B5D15004D008A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D782C0191B5D15004D008A /* Foundation.framework */; };
 		84D782C3191B5D15004D008A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D782C2191B5D15004D008A /* CoreGraphics.framework */; };
 		84D782C5191B5D15004D008A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D782C4191B5D15004D008A /* UIKit.framework */; };
@@ -68,8 +71,6 @@
 		F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFBF1924D1E3002EF722 /* NotificationScreen.m */; };
 		F566AFC3192D6A97002EF722 /* AddNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFC2192D6A97002EF722 /* AddNotification.m */; };
 		F58CFD6F193F3EC5004B41ED /* meldingen_navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58CFD6E193F3EC5004B41ED /* meldingen_navbar@2x.png */; };
-		F58CFD7A193F4F79004B41ED /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58CFD79193F4F79004B41ED /* logo@2x.png */; };
-		F58CFD7C193F4FD0004B41ED /* back_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58CFD7B193F4FD0004B41ED /* back_btn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,9 @@
 		84C52DB81924618F0092C288 /* telefoneren@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "telefoneren@2x.png"; sourceTree = "<group>"; };
 		84C7DBC719243F440036690C /* CoursesOverviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesOverviewTableViewCell.h; sourceTree = "<group>"; };
 		84C7DBC819243F440036690C /* CoursesOverviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesOverviewTableViewCell.m; sourceTree = "<group>"; };
+		84D47DF3193F5714001FAD7A /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		84D47DF5193F5720001FAD7A /* back_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_btn@2x.png"; sourceTree = "<group>"; };
+		84D47DF7193F5778001FAD7A /* account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = account.png; sourceTree = "<group>"; };
 		84D782BD191B5D15004D008A /* TimeToLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D782C0191B5D15004D008A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84D782C2191B5D15004D008A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -184,8 +188,6 @@
 		F566AFC2192D6A97002EF722 /* AddNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNotification.m; sourceTree = "<group>"; };
 		F58CFD6E193F3EC5004B41ED /* meldingen_navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meldingen_navbar@2x.png"; sourceTree = SOURCE_ROOT; };
 		F58CFD78193F49C3004B41ED /* hallosans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = hallosans.otf; path = "../../../Downloads/Hallo Sans/hallosans.otf"; sourceTree = "<group>"; };
-		F58CFD79193F4F79004B41ED /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "../../../Downloads/logo@2x.png"; sourceTree = "<group>"; };
-		F58CFD7B193F4FD0004B41ED /* back_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back_btn@2x.png"; path = "../../../Downloads/back_btn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,8 +217,9 @@
 		84C52DB1192461680092C288 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
-				F58CFD7B193F4FD0004B41ED /* back_btn@2x.png */,
-				F58CFD79193F4F79004B41ED /* logo@2x.png */,
+				84D47DF7193F5778001FAD7A /* account.png */,
+				84D47DF5193F5720001FAD7A /* back_btn@2x.png */,
+				84D47DF3193F5714001FAD7A /* logo@2x.png */,
 				F58CFD6E193F3EC5004B41ED /* meldingen_navbar@2x.png */,
 				84C52DB21924618F0092C288 /* customer@2x.png */,
 				84C52DB31924618F0092C288 /* doge@2x.png */,
@@ -464,8 +467,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F58CFD7A193F4F79004B41ED /* logo@2x.png in Resources */,
+				84D47DF6193F5720001FAD7A /* back_btn@2x.png in Resources */,
+				84D47DF8193F5778001FAD7A /* account.png in Resources */,
 				84D782D9191B5D15004D008A /* Images.xcassets in Resources */,
+				84D47DF4193F5714001FAD7A /* logo@2x.png in Resources */,
 				84A656DC1938AE2F00458C69 /* account@2x.png in Resources */,
 				84A656DE1938AE2F00458C69 /* meldingen_navbar@2x.png in Resources */,
 				84C52DBC1924618F0092C288 /* omdenken@2x.png in Resources */,
@@ -474,7 +479,6 @@
 				84C52DBA1924618F0092C288 /* doge@2x.png in Resources */,
 				84C52DBB1924618F0092C288 /* management@2x.png in Resources */,
 				84C52DBD1924618F0092C288 /* powerpoint@2x.png in Resources */,
-				F58CFD7C193F4FD0004B41ED /* back_btn@2x.png in Resources */,
 				84C52DBF1924618F0092C288 /* telefoneren@2x.png in Resources */,
 				84A656E31938AE2F00458C69 /* start@2x.png in Resources */,
 				84A656DD1938AE2F00458C69 /* berichten@2x.png in Resources */,
