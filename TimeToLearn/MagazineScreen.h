@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
 
 @interface MagazineScreen : UIViewController
+
+@property Cursus *currentCursus;
 
 @end

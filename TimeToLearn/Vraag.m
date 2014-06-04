@@ -16,6 +16,7 @@
         self.keys = [NSArray arrayWithObjects:@"vraag_id", @"les_id",@"index", @"video_url", @"video_titel", @"magazine_titel", @"magazine1", @"magazine2", @"magazine3", @"quizvraag", @"antwoord", @"optie1", @"optie2", @"optie3", nil];
         self.magazines = [[NSMutableArray alloc] init];
         self.opties = [[NSMutableArray alloc] init];
+        self.beantwoord = NO;
     }
     
     return self;

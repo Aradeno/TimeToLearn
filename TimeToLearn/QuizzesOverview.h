@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
 
 @interface QuizzesOverview : UITableViewController
+
+@property Cursus *currentCursus;
 
 @end

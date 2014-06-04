@@ -503,10 +503,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PZc-UN-cIH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lF-Wk-pgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="-2160"/>
+            <point key="canvasLocation" x="1362" y="-952"/>
         </scene>
         <!--Video Screen-->
         <scene sceneID="RWX-9b-CY4">
@@ -519,12 +520,23 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <view key="view" contentMode="scaleToFill" id="bgc-U3-51C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7Q-9i-UhU">
+                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HdZ-ku-XcE"/>
+                    <connections>
+                        <outlet property="webView" destination="L7Q-9i-UhU" id="HOA-sd-uwc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVb-yH-5s9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="-1348"/>
+            <point key="canvasLocation" x="1362" y="-1684"/>
         </scene>
         <!--Course Information Screen-->
         <scene sceneID="LwZ-8R-kiE">
@@ -598,7 +610,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnMagazine:" destination="eth-0v-hH6" eventType="touchUpInside" id="NXg-Se-iRT"/>
+                                    <action selector="btnVideo:" destination="eth-0v-hH6" eventType="touchUpInside" id="M4g-9t-jbl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMb-l6-SEc">
@@ -610,7 +622,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnVideo:" destination="eth-0v-hH6" eventType="touchUpInside" id="27f-1A-F8Q"/>
+                                    <action selector="btnMagazine:" destination="eth-0v-hH6" eventType="touchUpInside" id="AJ2-2C-MBq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -620,11 +632,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <connections>
                         <outlet property="magazineBtn" destination="LMb-l6-SEc" id="moq-8R-nii"/>
                         <outlet property="videoBtn" destination="Nid-xH-DGY" id="N3e-Ii-Esp"/>
+                        <segue destination="Hh4-vo-TVP" kind="push" identifier="pushToMagazineScreen" id="g5v-db-qto"/>
+                        <segue destination="Nx1-0B-q99" kind="push" identifier="pushToVideoScreen" id="GtL-ln-Vcu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIq-VH-bmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="-1280"/>
+            <point key="canvasLocation" x="798" y="-1344"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

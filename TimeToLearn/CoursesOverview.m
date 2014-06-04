@@ -64,7 +64,7 @@
     
     // Configure the cell...
     [cell.courseTitle setAdjustsFontSizeToFitWidth:YES];
-    Cursus* cursus = [self.currentGebruiker.cursussen objectAtIndex:0];
+    Cursus* cursus = [self.currentGebruiker.cursussen objectAtIndex:indexPath.row];
     cell.courseTitle.text = cursus.naamCursus;
     
     return cell;

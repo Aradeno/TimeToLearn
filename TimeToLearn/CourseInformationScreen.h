@@ -11,7 +11,7 @@
 #import "CourseInformationScreenTableViewCell.h"
 #import "CourseChoiceScreen.h"
 #import "QuizzesOverview.h"
-#import "DiscussionScreen.h"
+#import "DiscussionsOverview.h"
 
 @interface CourseInformationScreen : UITableViewController
 

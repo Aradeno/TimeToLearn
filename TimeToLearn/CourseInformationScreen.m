@@ -7,6 +7,7 @@
 //
 
 #import "CourseInformationScreen.h"
+#import "CourseChoiceScreen.h"
 
 @interface CourseInformationScreen ()
 
@@ -151,15 +152,22 @@
     
     NSIndexPath *nsindexPath = [self.tableView indexPathForSelectedRow];
     
+    CourseChoiceScreen *ccs;
+    QuizzesOverview* qo;
+    DiscussionsOverview *diso;
+    
     switch(nsindexPath.row){
         case 0:
-            [self performSegueWithIdentifier:@"pushToCourseChoiceScreen" sender:self];
+            ccs = (CourseChoiceScreen*)[segue destinationViewController];
+            ccs.currentCursus = self.currentCursus;
             break;
         case 1:
-            [self performSegueWithIdentifier:@"pushToQuizzesOverview" sender:self];
+            qo = (QuizzesOverview*)[segue destinationViewController];
+            qo.currentCursus = self.currentCursus;
             break;
         case 2:
-            [self performSegueWithIdentifier:@"pushToDiscussionsOverview" sender:self];
+            diso = (DiscussionsOverview*)[segue destinationViewController];
+            diso.currentCursus = self.currentCursus;
             break;
         case 3:
             break;

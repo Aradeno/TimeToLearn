@@ -21,6 +21,7 @@
 @property NSString* antwoord;
 @property NSMutableArray* magazines;
 @property NSMutableArray* opties;
+@property BOOL beantwoord;
 @property NSArray *keys;
 
 - (void) setKeyValues:(NSMutableArray *)values;

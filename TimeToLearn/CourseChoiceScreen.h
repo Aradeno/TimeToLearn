@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
+#import "MagazineScreen.h"
+#import "VideoScreen.h"
 
 @interface CourseChoiceScreen : UIViewController
+
+@property Cursus *currentCursus;
+
 @property (weak, nonatomic) IBOutlet UIButton *videoBtn;
 @property (weak, nonatomic) IBOutlet UIButton *magazineBtn;
 
