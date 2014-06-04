@@ -57,7 +57,6 @@
 		84F2141E1924323500684158 /* CoursesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2141D1924323500684158 /* CoursesOverview.m */; };
 		F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFBF1924D1E3002EF722 /* NotificationScreen.m */; };
 		F566AFC3192D6A97002EF722 /* AddNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFC2192D6A97002EF722 /* AddNotification.m */; };
-		F5BB837A193602420059F597 /* repeat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BB8379193602420059F597 /* repeat@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,7 +157,6 @@
 		F566AFBF1924D1E3002EF722 /* NotificationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScreen.m; sourceTree = "<group>"; };
 		F566AFC1192D6A97002EF722 /* AddNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNotification.h; sourceTree = "<group>"; };
 		F566AFC2192D6A97002EF722 /* AddNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNotification.m; sourceTree = "<group>"; };
-		F5BB8379193602420059F597 /* repeat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "repeat@2x.png"; path = "../../Downloads/repeat@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +186,6 @@
 		84C52DB1192461680092C288 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
-				F5BB8379193602420059F597 /* repeat@2x.png */,
 				84C52DB21924618F0092C288 /* customer@2x.png */,
 				84C52DB31924618F0092C288 /* doge@2x.png */,
 				84C52DB41924618F0092C288 /* management@2x.png */,
@@ -436,7 +433,6 @@
 				84C52DBA1924618F0092C288 /* doge@2x.png in Resources */,
 				84C52DBB1924618F0092C288 /* management@2x.png in Resources */,
 				84C52DBD1924618F0092C288 /* powerpoint@2x.png in Resources */,
-				F5BB837A193602420059F597 /* repeat@2x.png in Resources */,
 				84C52DBF1924618F0092C288 /* telefoneren@2x.png in Resources */,
 				84C52DB91924618F0092C288 /* customer@2x.png in Resources */,
 				84C52DBE1924618F0092C288 /* selling@2x.png in Resources */,

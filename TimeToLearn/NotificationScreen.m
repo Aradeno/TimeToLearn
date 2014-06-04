@@ -72,11 +72,12 @@
     [cell.detailTextLabel setText:/*localNotification.alertBody*/[localNotification.fireDate description]];
     NSString *notificatieBeschrijving =[[localNotification.fireDate description] substringToIndex:16];
     
-    if(localNotification.repeatInterval ||localNotification.repeatInterval)
+    if(localNotification.repeatInterval)
     {
-        notificatieBeschrijving = @"repeat";
+        
+        notificatieBeschrijving = [notificatieBeschrijving stringByAppendingString: @"               @repeat"];
 //        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 5, 5)];
-//        imgView.image = [UIImage imageNamed:@"repeat.png"];
+//        imgView.image = [UIImage imageNamed:@"selling.png"];
 //        cell.imageView.image = imgView.image;
     }
     
@@ -173,6 +174,7 @@
             //give deletion code here
             
             NSIndexPath *selectedRowPath = [self.tableView indexPathForSelectedRow];
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:selectedRowPath, nil] withRowAnimation:UITableViewRowAnimationFade];
             int rowIndex = selectedRowPath.row;
             UILocalNotification *selectedObject = [localNotifications objectAtIndex:rowIndex];
             [[UIApplication sharedApplication] cancelLocalNotification:selectedObject];
