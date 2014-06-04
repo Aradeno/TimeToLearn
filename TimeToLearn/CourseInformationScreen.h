@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
+#import "CourseInformationScreenTableViewCell.h"
+#import "CourseChoiceScreen.h"
+#import "QuizzesOverview.h"
+#import "DiscussionsOverview.h"
 
 @interface CourseInformationScreen : UITableViewController
+
+@property Cursus* currentCursus;
 
 @end

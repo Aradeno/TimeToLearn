@@ -9,9 +9,10 @@
 #ifndef TimeToLearn_Objects_h
     #define TimeToLearn_Objects_h
     #import "Gebruiker.h"
-    #import "Bericht.h"
+    #import "CursusVolger.h"
     #import "Cursus.h"
+    #import "Les.h"
     #import "Vraag.h"
-    #import "VraagOptie.h"
+    #import "Bericht.h"
     #import "ObjectWithKeys.h"
 #endif

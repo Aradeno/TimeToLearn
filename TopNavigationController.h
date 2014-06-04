@@ -7,14 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ObjectWithKeys.h"
+#import "Objects.h"
 
 @interface TopNavigationController : UINavigationController
 
 @property NSMutableArray* gebruikers;
 @property NSMutableArray* cursussen;
+@property NSMutableArray* cursusVolgers;
+@property NSMutableArray* lessen;
 @property NSMutableArray* vragen;
-@property NSMutableArray* vraagOpties;
 @property NSMutableArray* berichten;
+
+- (void)addToList:(id <ObjectWithKeys>) objWithKeys;
+
+- (Gebruiker*)findGebruiker:(NSString*)userId;
+- (Gebruiker*)findGebruikerByName:(NSString*)gebruikersnaam;
+- (Cursus*)findCursus:(NSString*)cursusId;
+- (CursusVolger*)findCursusVolger:(NSString*)cursusVolgerId;
+- (Les*)findLes:(NSString*)lesId;
+- (Vraag*)findVraag:(NSString*)vraagId;
+- (Bericht*)findBericht:(NSString*)berichtId;
+
+- (void)rearrangeObjects;
 
 @end

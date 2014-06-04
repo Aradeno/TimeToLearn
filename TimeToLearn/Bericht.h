@@ -9,9 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "ObjectWithKeys.h"
 
-@interface Bericht : NSObject
-@property NSInteger berichtId;
+@interface Bericht : NSObject <ObjectWithKeys>
+
+@property NSString* berichtId;
+@property NSString* userId;
+@property NSString* cursusId;
+@property NSString* reactieOpId;
+@property NSString* berichtTitel;
 @property NSString* berichtTekst;
+@property NSString* datumTijd;
 @property NSMutableArray* reacties;
 @property NSArray *keys;
 

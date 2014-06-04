@@ -11,6 +11,17 @@
 		844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ECC76191B903300C34CA4 /* DiscussionsOverview.m */; };
 		844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ECC79191B91A600C34CA4 /* DiscussionScreen.m */; };
 		8461F89A1924C90A00884C2F /* TopNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461F8991924C90A00884C2F /* TopNavigationController.m */; };
+		84A656CC1938181100458C69 /* Les.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A656CB1938181100458C69 /* Les.m */; };
+		84A656CF19381D6F00458C69 /* CursusVolger.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A656CE19381D6F00458C69 /* CursusVolger.m */; };
+		84A656D21938A11800458C69 /* CourseInformationScreenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A656D11938A11800458C69 /* CourseInformationScreenTableViewCell.m */; };
+		84A656DC1938AE2F00458C69 /* account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A656D41938AE2F00458C69 /* account@2x.png */; };
+		84A656DD1938AE2F00458C69 /* berichten@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A656D51938AE2F00458C69 /* berichten@2x.png */; };
+		84A656DE1938AE2F00458C69 /* meldingen_navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A656D61938AE2F00458C69 /* meldingen_navbar@2x.png */; };
+		84A656DF1938AE2F00458C69 /* meldingen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A656D71938AE2F00458C69 /* meldingen@2x.png */; };
+		84A656E01938AE2F00458C69 /* over_de_app@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A656D81938AE2F00458C69 /* over_de_app@2x.png */; };
+		84A656E11938AE2F00458C69 /* overzicht@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A656D91938AE2F00458C69 /* overzicht@2x.png */; };
+		84A656E21938AE2F00458C69 /* ranking@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A656DA1938AE2F00458C69 /* ranking@2x.png */; };
+		84A656E31938AE2F00458C69 /* start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A656DB1938AE2F00458C69 /* start@2x.png */; };
 		84AA520C191B896400602164 /* CourseChoiceScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA520B191B896400602164 /* CourseChoiceScreen.m */; };
 		84AA520F191B8A0400602164 /* VideoScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA520E191B8A0400602164 /* VideoScreen.m */; };
 		84AA5212191B8A1000602164 /* MagazineScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA5211191B8A1000602164 /* MagazineScreen.m */; };
@@ -43,7 +54,6 @@
 		84E17FFC1924B9F1001E13FB /* Bericht.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FF51924B9F1001E13FB /* Bericht.m */; };
 		84E17FFD1924B9F1001E13FB /* Cursus.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FF71924B9F1001E13FB /* Cursus.m */; };
 		84E17FFE1924B9F1001E13FB /* Vraag.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FF91924B9F1001E13FB /* Vraag.m */; };
-		84E17FFF1924B9F1001E13FB /* VraagOptie.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E17FFB1924B9F1001E13FB /* VraagOptie.m */; };
 		84E180021924BA0F001E13FB /* Gebruiker.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180011924BA0F001E13FB /* Gebruiker.m */; };
 		84E180181924C4B7001E13FB /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180061924C4B7001E13FB /* AFHTTPRequestOperation.m */; };
 		84E180191924C4B7001E13FB /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180081924C4B7001E13FB /* AFHTTPRequestOperationManager.m */; };
@@ -79,6 +89,20 @@
 		8452E99319269F050078E399 /* Objects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objects.h; sourceTree = "<group>"; };
 		8461F8981924C90A00884C2F /* TopNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopNavigationController.h; path = ../TopNavigationController.h; sourceTree = "<group>"; };
 		8461F8991924C90A00884C2F /* TopNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopNavigationController.m; path = ../TopNavigationController.m; sourceTree = "<group>"; };
+		84A656CA1938181100458C69 /* Les.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Les.h; sourceTree = "<group>"; };
+		84A656CB1938181100458C69 /* Les.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Les.m; sourceTree = "<group>"; };
+		84A656CD19381D6F00458C69 /* CursusVolger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CursusVolger.h; sourceTree = "<group>"; };
+		84A656CE19381D6F00458C69 /* CursusVolger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CursusVolger.m; sourceTree = "<group>"; };
+		84A656D01938A11800458C69 /* CourseInformationScreenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInformationScreenTableViewCell.h; sourceTree = "<group>"; };
+		84A656D11938A11800458C69 /* CourseInformationScreenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInformationScreenTableViewCell.m; sourceTree = "<group>"; };
+		84A656D41938AE2F00458C69 /* account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account@2x.png"; sourceTree = "<group>"; };
+		84A656D51938AE2F00458C69 /* berichten@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "berichten@2x.png"; sourceTree = "<group>"; };
+		84A656D61938AE2F00458C69 /* meldingen_navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meldingen_navbar@2x.png"; sourceTree = "<group>"; };
+		84A656D71938AE2F00458C69 /* meldingen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meldingen@2x.png"; sourceTree = "<group>"; };
+		84A656D81938AE2F00458C69 /* over_de_app@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "over_de_app@2x.png"; sourceTree = "<group>"; };
+		84A656D91938AE2F00458C69 /* overzicht@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overzicht@2x.png"; sourceTree = "<group>"; };
+		84A656DA1938AE2F00458C69 /* ranking@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranking@2x.png"; sourceTree = "<group>"; };
+		84A656DB1938AE2F00458C69 /* start@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start@2x.png"; sourceTree = "<group>"; };
 		84AA520A191B896400602164 /* CourseChoiceScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseChoiceScreen.h; sourceTree = "<group>"; };
 		84AA520B191B896400602164 /* CourseChoiceScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseChoiceScreen.m; sourceTree = "<group>"; };
 		84AA520D191B8A0400602164 /* VideoScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoScreen.h; sourceTree = "<group>"; };
@@ -128,8 +152,6 @@
 		84E17FF71924B9F1001E13FB /* Cursus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cursus.m; sourceTree = "<group>"; };
 		84E17FF81924B9F1001E13FB /* Vraag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vraag.h; sourceTree = "<group>"; };
 		84E17FF91924B9F1001E13FB /* Vraag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vraag.m; sourceTree = "<group>"; };
-		84E17FFA1924B9F1001E13FB /* VraagOptie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VraagOptie.h; sourceTree = "<group>"; };
-		84E17FFB1924B9F1001E13FB /* VraagOptie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VraagOptie.m; sourceTree = "<group>"; };
 		84E180001924BA0F001E13FB /* Gebruiker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gebruiker.h; sourceTree = "<group>"; };
 		84E180011924BA0F001E13FB /* Gebruiker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gebruiker.m; sourceTree = "<group>"; };
 		84E180051924C4B7001E13FB /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -183,6 +205,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84A656D31938AE1400458C69 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				84A656D41938AE2F00458C69 /* account@2x.png */,
+				84A656D51938AE2F00458C69 /* berichten@2x.png */,
+				84A656D61938AE2F00458C69 /* meldingen_navbar@2x.png */,
+				84A656D71938AE2F00458C69 /* meldingen@2x.png */,
+				84A656D81938AE2F00458C69 /* over_de_app@2x.png */,
+				84A656D91938AE2F00458C69 /* overzicht@2x.png */,
+				84A656DA1938AE2F00458C69 /* ranking@2x.png */,
+				84A656DB1938AE2F00458C69 /* start@2x.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
 		84C52DB1192461680092C288 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +301,8 @@
 				84F2141D1924323500684158 /* CoursesOverview.m */,
 				84C7DBC719243F440036690C /* CoursesOverviewTableViewCell.h */,
 				84C7DBC819243F440036690C /* CoursesOverviewTableViewCell.m */,
+				84A656D01938A11800458C69 /* CourseInformationScreenTableViewCell.h */,
+				84A656D11938A11800458C69 /* CourseInformationScreenTableViewCell.m */,
 				8461F8981924C90A00884C2F /* TopNavigationController.h */,
 				8461F8991924C90A00884C2F /* TopNavigationController.m */,
 				F566AFBE1924D1E3002EF722 /* NotificationScreen.h */,
@@ -308,14 +347,16 @@
 			children = (
 				84E180001924BA0F001E13FB /* Gebruiker.h */,
 				84E180011924BA0F001E13FB /* Gebruiker.m */,
-				84E17FF41924B9F1001E13FB /* Bericht.h */,
-				84E17FF51924B9F1001E13FB /* Bericht.m */,
 				84E17FF61924B9F1001E13FB /* Cursus.h */,
 				84E17FF71924B9F1001E13FB /* Cursus.m */,
+				84A656CD19381D6F00458C69 /* CursusVolger.h */,
+				84A656CE19381D6F00458C69 /* CursusVolger.m */,
+				84A656CA1938181100458C69 /* Les.h */,
+				84A656CB1938181100458C69 /* Les.m */,
 				84E17FF81924B9F1001E13FB /* Vraag.h */,
 				84E17FF91924B9F1001E13FB /* Vraag.m */,
-				84E17FFA1924B9F1001E13FB /* VraagOptie.h */,
-				84E17FFB1924B9F1001E13FB /* VraagOptie.m */,
+				84E17FF41924B9F1001E13FB /* Bericht.h */,
+				84E17FF51924B9F1001E13FB /* Bericht.m */,
 				8452E99319269F050078E399 /* Objects.h */,
 				84D96852192E00700067632A /* ObjectWithKeys.h */,
 			);
@@ -428,14 +469,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D782D9191B5D15004D008A /* Images.xcassets in Resources */,
+				84A656DC1938AE2F00458C69 /* account@2x.png in Resources */,
+				84A656DE1938AE2F00458C69 /* meldingen_navbar@2x.png in Resources */,
 				84C52DBC1924618F0092C288 /* omdenken@2x.png in Resources */,
 				84D782CB191B5D15004D008A /* InfoPlist.strings in Resources */,
+				84A656E01938AE2F00458C69 /* over_de_app@2x.png in Resources */,
 				84C52DBA1924618F0092C288 /* doge@2x.png in Resources */,
 				84C52DBB1924618F0092C288 /* management@2x.png in Resources */,
 				84C52DBD1924618F0092C288 /* powerpoint@2x.png in Resources */,
 				84C52DBF1924618F0092C288 /* telefoneren@2x.png in Resources */,
+				84A656E31938AE2F00458C69 /* start@2x.png in Resources */,
+				84A656DD1938AE2F00458C69 /* berichten@2x.png in Resources */,
 				84C52DB91924618F0092C288 /* customer@2x.png in Resources */,
+				84A656DF1938AE2F00458C69 /* meldingen@2x.png in Resources */,
 				84C52DBE1924618F0092C288 /* selling@2x.png in Resources */,
+				84A656E11938AE2F00458C69 /* overzicht@2x.png in Resources */,
+				84A656E21938AE2F00458C69 /* ranking@2x.png in Resources */,
 				84D782D4191B5D15004D008A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,9 +505,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E1801D1924C4B7001E13FB /* AFURLConnectionOperation.m in Sources */,
+				84A656D21938A11800458C69 /* CourseInformationScreenTableViewCell.m in Sources */,
 				844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */,
 				84E180181924C4B7001E13FB /* AFHTTPRequestOperation.m in Sources */,
 				F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */,
+				84A656CC1938181100458C69 /* Les.m in Sources */,
 				84E1801F1924C4B7001E13FB /* AFURLResponseSerialization.m in Sources */,
 				84D78306191B6031004D008A /* AnswerScreen.m in Sources */,
 				84E17FFD1924B9F1001E13FB /* Cursus.m in Sources */,
@@ -466,6 +517,7 @@
 				84D78303191B601E004D008A /* QuestionScreen.m in Sources */,
 				84AA5212191B8A1000602164 /* MagazineScreen.m in Sources */,
 				84DEDDB2191B8615000ABCF1 /* CourseInformationScreen.m in Sources */,
+				84A656CF19381D6F00458C69 /* CursusVolger.m in Sources */,
 				84E17FFE1924B9F1001E13FB /* Vraag.m in Sources */,
 				84E1801C1924C4B7001E13FB /* AFSecurityPolicy.m in Sources */,
 				84E180201924C4B7001E13FB /* AFURLSessionManager.m in Sources */,
@@ -485,7 +537,6 @@
 				844ECC74191B8EC300C34CA4 /* QuizzesOverview.m in Sources */,
 				F566AFC3192D6A97002EF722 /* AddNotification.m in Sources */,
 				844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */,
-				84E17FFF1924B9F1001E13FB /* VraagOptie.m in Sources */,
 				84AA520C191B896400602164 /* CourseChoiceScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

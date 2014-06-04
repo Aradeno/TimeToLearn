@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
 
 @interface DiscussionsOverview : UITableViewController
+
+@property Cursus *currentCursus;
 
 @end

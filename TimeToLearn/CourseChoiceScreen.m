@@ -40,12 +40,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)btnMagazine:(id)sender {
-}
-- (IBAction)btnVideo:(id)sender {
+
+- (IBAction)btnMagazine:(id)sender
+{
+    [self performSegueWithIdentifier:@"pushToMagazineScreen" sender:self];
 }
 
-/*
+- (IBAction)btnVideo:(id)sender
+{
+    [self performSegueWithIdentifier:@"pushToVideoScreen" sender:self];
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -53,7 +59,13 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([[segue destinationViewController] isKindOfClass: [MagazineScreen class]]){
+        MagazineScreen *mags = (MagazineScreen*)[segue destinationViewController];
+        mags.currentCursus = self.currentCursus;
+    } else {
+        VideoScreen *vids = (VideoScreen*)[segue destinationViewController];
+        vids.currentCursus = self.currentCursus;
+    }
 }
-*/
 
 @end

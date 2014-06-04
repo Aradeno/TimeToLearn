@@ -7,6 +7,7 @@
 //
 
 #import "CourseInformationScreen.h"
+#import "CourseChoiceScreen.h"
 
 @interface CourseInformationScreen ()
 
@@ -32,6 +33,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //self.navigationController.navigationBar.translucent = NO;
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,26 +50,59 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 4;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    CourseInformationScreenTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"courseInformationCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    [cell.informationTitle setAdjustsFontSizeToFitWidth:YES];
+    switch(indexPath.row){
+        case 0:
+            cell.informationTitle.text = @"Start";
+            [cell.informationIcon setImage:[UIImage imageNamed:@"start.png"]];
+            break;
+        case 1:
+            cell.informationTitle.text = @"Overzicht";
+            [cell.informationIcon setImage:[UIImage imageNamed:@"overzicht.png"]];
+            break;
+        case 2:
+            cell.informationTitle.text = @"Discussies";
+            [cell.informationIcon setImage:[UIImage imageNamed:@"berichten.png"]];
+            break;
+        case 3:
+            cell.informationTitle.text = @"Ranking";
+            [cell.informationIcon setImage:[UIImage imageNamed:@"ranking.png"]];
+            break;
+    }
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch(indexPath.row){
+        case 0:
+            [self performSegueWithIdentifier:@"pushToCourseChoiceScreen" sender:self];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"pushToQuizzesOverview" sender:self];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"pushToDiscussionsOverview" sender:self];
+            break;
+        case 3:
+            break;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -105,7 +142,6 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -113,7 +149,29 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    NSIndexPath *nsindexPath = [self.tableView indexPathForSelectedRow];
+    
+    CourseChoiceScreen *ccs;
+    QuizzesOverview* qo;
+    DiscussionsOverview *diso;
+    
+    switch(nsindexPath.row){
+        case 0:
+            ccs = (CourseChoiceScreen*)[segue destinationViewController];
+            ccs.currentCursus = self.currentCursus;
+            break;
+        case 1:
+            qo = (QuizzesOverview*)[segue destinationViewController];
+            qo.currentCursus = self.currentCursus;
+            break;
+        case 2:
+            diso = (DiscussionsOverview*)[segue destinationViewController];
+            diso.currentCursus = self.currentCursus;
+            break;
+        case 3:
+            break;
+    }
 }
-*/
 
 @end

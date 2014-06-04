@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
 
 @interface VideoScreen : UIViewController
+
+@property Cursus *currentCursus;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end

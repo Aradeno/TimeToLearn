@@ -17,6 +17,7 @@
 
 @synthesize txtGebruikersnaam;
 @synthesize txtWachtwoord;
+NSInteger count;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +34,8 @@
     [btnLayer setMasksToBounds:YES];
     [btnLayer setCornerRadius:5.0f];
     [super viewDidLoad];
+    count = 0;
+    [self initializeObjects];
     // Do any additional setup after loading the view.
 }
 
@@ -42,8 +45,11 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)inloggen:(id)sender {
-    if([txtGebruikersnaam.text isEqual:@"test"] && [txtWachtwoord.text isEqual:@"test"]){
-        [self initializeObjects];
+    
+    TopNavigationController* controller = (TopNavigationController*)[self parentViewController];
+    self.currentGebruiker = [controller findGebruikerByName:txtGebruikersnaam.text];
+    
+    if(self.currentGebruiker != nil && ([txtGebruikersnaam.text isEqual:self.currentGebruiker.gebruikersnaam] && [txtWachtwoord.text isEqual:self.currentGebruiker.wachtwoord])){
         [self performSegueWithIdentifier:@"pushToCoursesOverview" sender:self];
     } else {
         UIAlertView *alertView =
@@ -52,17 +58,13 @@
     }
 }
 
-- (void)initializeObjects {
-    TopNavigationController* controller = (TopNavigationController*)[[self navigationController] topViewController];
-    //Class classGebruiker = [Gebruiker class];
-    Class classBericht = [Bericht class];
-    Class classCursus = [Cursus class];
-    Class classVraag = [Vraag class];
-    Class classVraagOptie = [VraagOptie class];
-    
+- (void) initializeObjects {
     [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/gebruikers.php" objectType:[Gebruiker class]];
-     
-    //[self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/vraag.php" objectType:classVraag];
+    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/cursus.php" objectType:[Cursus class]];
+    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/cursusvolger.php" objectType:[CursusVolger class]];
+    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/les.php" objectType:[Les class]];
+    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/vraag.php" objectType:[Vraag class]];
+    [self loadJsonData:@"http://beta.morgen-media.nl/timetolearn/berichten.php" objectType:[Bericht class]];
 }
 
 - (void) loadJsonData:(NSString*)url objectType:(Class)type
@@ -70,7 +72,7 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
+        //NSLog(@"JSON: %@", responseObject);
         [self parseJsonData:responseObject objectType:type];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
@@ -80,19 +82,6 @@
 - (void) parseJsonData:(id)responseObject objectType:(Class)type
 {
     TopNavigationController* controller = (TopNavigationController*)[self parentViewController];
-    NSLog(@"%@",[self parentViewController]);
-    NSMutableArray* list;
-    
-    if(type == [Gebruiker class])
-        list = controller.gebruikers;
-    else if(type == [Bericht class])
-        list = controller.berichten;
-    else if(type == [Cursus class])
-        list = controller.cursussen;
-    else if(type == [Vraag class])
-        list = controller.vragen;
-    else if(type == [VraagOptie class])
-        list = controller.vraagOpties;
     
     for(NSDictionary* nsdict in responseObject){
         id <ObjectWithKeys> objWithKeys = [[type alloc] init];
@@ -100,10 +89,17 @@
         NSMutableArray *keyValues = [[NSMutableArray alloc] init];
         for(NSInteger i = 0; i < keys.count; i++){
             [keyValues addObject:[nsdict objectForKey:[keys objectAtIndex:i]]];
-            NSLog(@"%@", [keyValues objectAtIndex:i]);
+            //NSLog(@"%@:%@", [keys objectAtIndex:i], [keyValues objectAtIndex:i]);
         }
         [objWithKeys setKeyValues:keyValues];
-        [list addObject:objWithKeys];
+        [controller addToList:objWithKeys];
+    }
+    
+    count++;
+    
+    if(count == 6){
+        [controller rearrangeObjects];
+        count = 0;
     }
 }
 
@@ -121,7 +117,6 @@
     }
 }
 
-/*
  #pragma mark - Navigation
  
  // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -129,6 +124,8 @@
  {
  // Get the new view controller using [segue destinationViewController].
  // Pass the selected object to the new view controller.
+     CoursesOverview* co = (CoursesOverview*)[segue destinationViewController];
+     co.currentGebruiker = self.currentGebruiker;
  }
- */
+
 @end

@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "ObjectWithKeys.h"
 
-@interface Cursus : NSObject
+@interface Cursus : NSObject <ObjectWithKeys>
+
 @property NSString* cursusId;
 @property NSString* naamCursus;
-@property NSMutableArray* vragen;
+@property NSMutableArray* lessen;
 @property NSString* identifier;
 @property NSString* imgURL;
+@property NSMutableArray* berichten;
 @property NSArray *keys;
 
 - (void) setKeyValues:(NSMutableArray *)values;
