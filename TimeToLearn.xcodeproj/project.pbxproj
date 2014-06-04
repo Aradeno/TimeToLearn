@@ -183,7 +183,6 @@
 		F566AFBF1924D1E3002EF722 /* NotificationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScreen.m; sourceTree = "<group>"; };
 		F566AFC1192D6A97002EF722 /* AddNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNotification.h; sourceTree = "<group>"; };
 		F566AFC2192D6A97002EF722 /* AddNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNotification.m; sourceTree = "<group>"; };
-		F58CFD78193F49C3004B41ED /* hallosans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = hallosans.otf; path = "../../../Downloads/Hallo Sans/hallosans.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,7 +317,6 @@
 			children = (
 				84D782C8191B5D15004D008A /* TimeToLearn-Info.plist */,
 				84D782C9191B5D15004D008A /* InfoPlist.strings */,
-				F58CFD78193F49C3004B41ED /* hallosans.otf */,
 				84D782CC191B5D15004D008A /* main.m */,
 				84D782CE191B5D15004D008A /* TimeToLearn-Prefix.pch */,
 			);

@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuestionScreen.h"
 #import "Objects.h"
+
 
 @interface VideoScreen : UIViewController
 
 @property Cursus *currentCursus;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIButton *btnGaVerder;
+@property (weak, nonatomic) IBOutlet UILabel *lesTitel;
+@property (weak, nonatomic) IBOutlet UILabel *videoTitel;
+@property (weak, nonatomic) IBOutlet UILabel *vraagTitel;
 
 @end

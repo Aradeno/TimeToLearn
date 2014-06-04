@@ -25,23 +25,32 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    CALayer *btnLayer = [_btnGaVerder layer];
+    [btnLayer setMasksToBounds:YES];
+    [btnLayer setCornerRadius:5.0f];
+    [super viewDidLoad];
+    [self.videoTitel setAdjustsFontSizeToFitWidth:YES];
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-    NSLog(self.currentCursus.naamCursus);
+    self.webView.scrollView.scrollEnabled = NO;
     Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
     for(Vraag* vraag in nsasd.vragen){
         if(vraag.beantwoord == NO){
             NSURL *urlVideo = [NSURL URLWithString:vraag.videoURL];
             NSURLRequest *request = [NSURLRequest requestWithURL:urlVideo];
             [self.webView loadRequest:request];
-            self.webView.scrollView.scrollEnabled = NO;
+            self.videoTitel.text = vraag.videoTitel;
+            self.lesTitel.text = @"Les  1";
+            self.vraagTitel.text = [NSString stringWithFormat:@"Vraag %i", vraag.index + 1];
             return;
         }
     }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +59,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -58,7 +67,17 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    QuestionScreen *qs = (QuestionScreen*)[segue destinationViewController];
+    qs.currentCursus = _currentCursus;
+    
+    Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
+    for(Vraag* vraag in nsasd.vragen){
+        if(vraag.beantwoord == NO){
+            qs.currentVraag = vraag;
+            break;
+        }
+    }
 }
-*/
+
 
 @end
