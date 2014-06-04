@@ -158,13 +158,30 @@
         NSLog(@"Added cursus:%@ to gebruiker:%@", cursusVolger.cursusId, gebruiker.userId);
     }
     
-    for(Gebruiker* gebruiker in self.gebruikers){
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"cursusId" ascending:YES];
-        [gebruiker.cursussen sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
-    }
+    [self sortBerichten];
     
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"berichtId" ascending:YES];
-    [self.berichten sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+}
+
+- (void)sortBerichten
+{
+    NSSortDescriptor *sortCursusDescriptor = [[NSSortDescriptor alloc] initWithKey:@"cursusId" ascending:YES];
+    NSSortDescriptor *sortBerichtDescriptor = [[NSSortDescriptor alloc] initWithKey:@"berichtId" ascending:YES];
+    NSSortDescriptor *sortLesDescriptor = [[NSSortDescriptor alloc] initWithKey:@"lesId" ascending:YES];
+    NSSortDescriptor *sortVraagDescriptor = [[NSSortDescriptor alloc] initWithKey:@"index" ascending:YES];
+    
+    [self.cursussen sortUsingDescriptors:[NSArray arrayWithObject:sortCursusDescriptor]];
+    [self.berichten sortUsingDescriptors:[NSArray arrayWithObject:sortBerichtDescriptor]];
+    
+    for(Gebruiker* gebruiker in self.gebruikers){
+        [gebruiker.cursussen sortUsingDescriptors:[NSArray arrayWithObject:sortCursusDescriptor]];
+        [gebruiker.berichten sortUsingDescriptors:[NSArray arrayWithObject:sortBerichtDescriptor]];
+        for(Cursus* cursus in gebruiker.cursussen){
+            [cursus.lessen sortUsingDescriptors:[NSArray arrayWithObject:sortLesDescriptor]];
+            for(Les* les in cursus.lessen){
+                [les.vragen sortUsingDescriptors:[NSArray arrayWithObject:sortVraagDescriptor]];
+            }
+        }
+    }
 }
 
 /*

@@ -27,18 +27,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(self.currentCursus.naamCursus);
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     NSLog(self.currentCursus.naamCursus);
-    for(Vraag* vraag in [[self.currentCursus.lessen objectAtIndex:0] vragen]){
+    Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
+    for(Vraag* vraag in nsasd.vragen){
         if(vraag.beantwoord == NO){
-            NSLog(vraag.videoURL);
             NSURL *urlVideo = [NSURL URLWithString:vraag.videoURL];
             NSURLRequest *request = [NSURLRequest requestWithURL:urlVideo];
             [self.webView loadRequest:request];
+            self.webView.scrollView.scrollEnabled = NO;
             return;
         }
     }
