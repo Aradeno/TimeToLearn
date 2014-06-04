@@ -17,6 +17,22 @@
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     
+    
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault]; // Takes out title
+    UIImage *backButtonImage = [UIImage imageNamed:@"back_btn"];
+    
+    if ([UINavigationBar instancesRespondToSelector:@selector(setBackIndicatorImage:)]) {
+        [[UINavigationBar appearance] setBackIndicatorImage:backButtonImage];
+        [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:backButtonImage];
+    } else {
+        int imageSize = 21; // REPLACE WITH YOUR IMAGE WIDTH
+        
+        [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[backButtonImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, imageSize, 0, 0)] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    }
+    
+     [[UILabel appearance] setFont:[UIFont fontWithName:@"hallosans" size:17.0]];
+   // [[UIButton appearance] setFont:[UIFont fontWithName:@"hallosans" size:17.0]];
+    
     //For Navigation BAR
     NSDictionary *text = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIColor whiteColor], NSForegroundColorAttributeName, nil];
     

@@ -67,6 +67,9 @@
 		84F2141E1924323500684158 /* CoursesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2141D1924323500684158 /* CoursesOverview.m */; };
 		F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFBF1924D1E3002EF722 /* NotificationScreen.m */; };
 		F566AFC3192D6A97002EF722 /* AddNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFC2192D6A97002EF722 /* AddNotification.m */; };
+		F58CFD6F193F3EC5004B41ED /* meldingen_navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58CFD6E193F3EC5004B41ED /* meldingen_navbar@2x.png */; };
+		F58CFD7A193F4F79004B41ED /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58CFD79193F4F79004B41ED /* logo@2x.png */; };
+		F58CFD7C193F4FD0004B41ED /* back_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58CFD7B193F4FD0004B41ED /* back_btn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +182,10 @@
 		F566AFBF1924D1E3002EF722 /* NotificationScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScreen.m; sourceTree = "<group>"; };
 		F566AFC1192D6A97002EF722 /* AddNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNotification.h; sourceTree = "<group>"; };
 		F566AFC2192D6A97002EF722 /* AddNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNotification.m; sourceTree = "<group>"; };
+		F58CFD6E193F3EC5004B41ED /* meldingen_navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meldingen_navbar@2x.png"; sourceTree = SOURCE_ROOT; };
+		F58CFD78193F49C3004B41ED /* hallosans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = hallosans.otf; path = "../../../Downloads/Hallo Sans/hallosans.otf"; sourceTree = "<group>"; };
+		F58CFD79193F4F79004B41ED /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "../../../Downloads/logo@2x.png"; sourceTree = "<group>"; };
+		F58CFD7B193F4FD0004B41ED /* back_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back_btn@2x.png"; path = "../../../Downloads/back_btn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,31 +212,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84A656D31938AE1400458C69 /* icons */ = {
-			isa = PBXGroup;
-			children = (
-				84A656D41938AE2F00458C69 /* account@2x.png */,
-				84A656D51938AE2F00458C69 /* berichten@2x.png */,
-				84A656D61938AE2F00458C69 /* meldingen_navbar@2x.png */,
-				84A656D71938AE2F00458C69 /* meldingen@2x.png */,
-				84A656D81938AE2F00458C69 /* over_de_app@2x.png */,
-				84A656D91938AE2F00458C69 /* overzicht@2x.png */,
-				84A656DA1938AE2F00458C69 /* ranking@2x.png */,
-				84A656DB1938AE2F00458C69 /* start@2x.png */,
-			);
-			name = icons;
-			sourceTree = "<group>";
-		};
 		84C52DB1192461680092C288 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
+				F58CFD7B193F4FD0004B41ED /* back_btn@2x.png */,
+				F58CFD79193F4F79004B41ED /* logo@2x.png */,
+				F58CFD6E193F3EC5004B41ED /* meldingen_navbar@2x.png */,
 				84C52DB21924618F0092C288 /* customer@2x.png */,
 				84C52DB31924618F0092C288 /* doge@2x.png */,
 				84C52DB41924618F0092C288 /* management@2x.png */,
 				84C52DB51924618F0092C288 /* omdenken@2x.png */,
 				84C52DB61924618F0092C288 /* powerpoint@2x.png */,
-				84C52DB71924618F0092C288 /* selling@2x.png */,
 				84C52DB81924618F0092C288 /* telefoneren@2x.png */,
+				84C52DB71924618F0092C288 /* selling@2x.png */,
 			);
 			name = Pics;
 			sourceTree = "<group>";
@@ -318,6 +313,7 @@
 			children = (
 				84D782C8191B5D15004D008A /* TimeToLearn-Info.plist */,
 				84D782C9191B5D15004D008A /* InfoPlist.strings */,
+				F58CFD78193F49C3004B41ED /* hallosans.otf */,
 				84D782CC191B5D15004D008A /* main.m */,
 				84D782CE191B5D15004D008A /* TimeToLearn-Prefix.pch */,
 			);
@@ -468,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58CFD7A193F4F79004B41ED /* logo@2x.png in Resources */,
 				84D782D9191B5D15004D008A /* Images.xcassets in Resources */,
 				84A656DC1938AE2F00458C69 /* account@2x.png in Resources */,
 				84A656DE1938AE2F00458C69 /* meldingen_navbar@2x.png in Resources */,
@@ -477,6 +474,7 @@
 				84C52DBA1924618F0092C288 /* doge@2x.png in Resources */,
 				84C52DBB1924618F0092C288 /* management@2x.png in Resources */,
 				84C52DBD1924618F0092C288 /* powerpoint@2x.png in Resources */,
+				F58CFD7C193F4FD0004B41ED /* back_btn@2x.png in Resources */,
 				84C52DBF1924618F0092C288 /* telefoneren@2x.png in Resources */,
 				84A656E31938AE2F00458C69 /* start@2x.png in Resources */,
 				84A656DD1938AE2F00458C69 /* berichten@2x.png in Resources */,
@@ -485,6 +483,7 @@
 				84C52DBE1924618F0092C288 /* selling@2x.png in Resources */,
 				84A656E11938AE2F00458C69 /* overzicht@2x.png in Resources */,
 				84A656E21938AE2F00458C69 /* ranking@2x.png in Resources */,
+				F58CFD6F193F3EC5004B41ED /* meldingen_navbar@2x.png in Resources */,
 				84D782D4191B5D15004D008A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
