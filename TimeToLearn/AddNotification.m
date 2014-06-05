@@ -41,6 +41,7 @@
 
 - (IBAction)btnSave:(id)sender {
     NSDate *pickerDate = [self.datePicker date];
+    pickerDate = [pickerDate addTimeInterval:7200];
     //schedule notification
     UILocalNotification* localNotification = [[UILocalNotification alloc]init];
     localNotification.fireDate = pickerDate;
