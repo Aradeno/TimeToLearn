@@ -174,7 +174,6 @@
             //give deletion code here
             
             NSIndexPath *selectedRowPath = [self.tableView indexPathForSelectedRow];
-            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:selectedRowPath, nil] withRowAnimation:UITableViewRowAnimationFade];
             int rowIndex = selectedRowPath.row;
             UILocalNotification *selectedObject = [localNotifications objectAtIndex:rowIndex];
             [[UIApplication sharedApplication] cancelLocalNotification:selectedObject];
