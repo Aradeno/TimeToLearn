@@ -67,6 +67,7 @@
 		84E1801E1924C4B7001E13FB /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180131924C4B7001E13FB /* AFURLRequestSerialization.m */; };
 		84E1801F1924C4B7001E13FB /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180151924C4B7001E13FB /* AFURLResponseSerialization.m */; };
 		84E180201924C4B7001E13FB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180171924C4B7001E13FB /* AFURLSessionManager.m */; };
+		84E54CB2194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E54CB1194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m */; };
 		84F2141E1924323500684158 /* CoursesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2141D1924323500684158 /* CoursesOverview.m */; };
 		F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFBF1924D1E3002EF722 /* NotificationScreen.m */; };
 		F566AFC3192D6A97002EF722 /* AddNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F566AFC2192D6A97002EF722 /* AddNotification.m */; };
@@ -180,6 +181,8 @@
 		84E180151924C4B7001E13FB /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		84E180161924C4B7001E13FB /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		84E180171924C4B7001E13FB /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		84E54CB0194058A000E60DE1 /* DiscussionsOverviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionsOverviewTableViewCell.h; sourceTree = "<group>"; };
+		84E54CB1194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionsOverviewTableViewCell.m; sourceTree = "<group>"; };
 		84F2141C1924323500684158 /* CoursesOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesOverview.h; sourceTree = "<group>"; };
 		84F2141D1924323500684158 /* CoursesOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesOverview.m; sourceTree = "<group>"; };
 		F566AFBE1924D1E3002EF722 /* NotificationScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScreen.h; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 				84C7DBC819243F440036690C /* CoursesOverviewTableViewCell.m */,
 				84A656D01938A11800458C69 /* CourseInformationScreenTableViewCell.h */,
 				84A656D11938A11800458C69 /* CourseInformationScreenTableViewCell.m */,
+				84E54CB0194058A000E60DE1 /* DiscussionsOverviewTableViewCell.h */,
+				84E54CB1194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -524,6 +529,7 @@
 				844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */,
 				84E180181924C4B7001E13FB /* AFHTTPRequestOperation.m in Sources */,
 				F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */,
+				84E54CB2194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m in Sources */,
 				84A656CC1938181100458C69 /* Les.m in Sources */,
 				84E1801F1924C4B7001E13FB /* AFURLResponseSerialization.m in Sources */,
 				84D78306191B6031004D008A /* AnswerScreen.m in Sources */,
