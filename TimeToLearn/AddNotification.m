@@ -42,13 +42,13 @@
 - (IBAction)btnSave:(id)sender {
     NSDate *pickerDate = [self.datePicker date];
     //2 uur later(time zone gmt)
-    pickerDate = [pickerDate dateByAddingTimeInterval:7200];
     //schedule notification
     UILocalNotification* localNotification = [[UILocalNotification alloc]init];
     localNotification.fireDate = pickerDate;
     localNotification.alertBody=@"It's Time To Learn!";
     
     localNotification.alertAction=@"Show me!";
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
     
     [NSTimeZone resetSystemTimeZone];
     

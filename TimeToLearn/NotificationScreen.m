@@ -36,6 +36,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTable) name:@"reloadData" object:nil];
+    [self reloadTable];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,6 +61,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
@@ -70,15 +72,26 @@
     
     //display notication info
     [cell.detailTextLabel setText:/*localNotification.alertBody*/[localNotification.fireDate description]];
-    NSString *notificatieBeschrijving =[[localNotification.fireDate description] substringToIndex:16];
+    NSString *notificatieBeschrijving =[[[localNotification.fireDate dateByAddingTimeInterval:7200] description] substringToIndex:16];
+    cell.imageView.image = nil;
     
     if(localNotification.repeatInterval)
     {
-        
-        notificatieBeschrijving = [notificatieBeschrijving stringByAppendingString: @"               @repeat"];
-//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 5, 5)];
-//        imgView.image = [UIImage imageNamed:@"selling.png"];
-//        cell.imageView.image = imgView.image;
+        //REPEAT WEERGEVEN.
+        //alleen de tijd weergeven
+        //notificatieBeschrijving = [notificatieBeschrijving substringFromIndex:10];
+        //notificatieBeschrijving = [notificatieBeschrijving stringByAppendingString: @"               @repeat"];
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 5, 5)];
+        imgView.image = [UIImage imageNamed:@"meldingen.png"];
+        cell.imageView.image = imgView.image;
+        cell.imageView.hidden = false;
+    }
+    else
+    {
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 5, 5)];
+        imgView.image = [UIImage imageNamed:@"meldingen.png"];
+        cell.imageView.image = imgView.image;
+        cell.imageView.hidden = true;
     }
     
     [cell.textLabel setText:notificatieBeschrijving];
