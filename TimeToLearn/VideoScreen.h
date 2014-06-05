@@ -14,6 +14,8 @@
 @interface VideoScreen : UIViewController
 
 @property Cursus *currentCursus;
+@property Gebruiker *currentGebruiker;
+
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIButton *btnGaVerder;
 @property (weak, nonatomic) IBOutlet UILabel *lesTitel;

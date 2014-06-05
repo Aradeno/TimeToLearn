@@ -63,7 +63,7 @@
     }
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -71,7 +71,15 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([[segue destinationViewController] isKindOfClass:[CourseChoiceScreen class]]){
+        CourseChoiceScreen *ccs = (CourseChoiceScreen*)[segue destinationViewController];
+        ccs.currentGebruiker = self.currentGebruiker;
+        ccs.currentCursus = self.currentCursus;
+    } else {
+        CoursesOverview *cov = (CoursesOverview*)[segue destinationViewController];
+        cov.currentGebruiker = self.currentGebruiker;
+    }
 }
-*/
+
 
 @end

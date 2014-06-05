@@ -69,6 +69,7 @@
     // Pass the selected object to the new view controller.
     QuestionScreen *qs = (QuestionScreen*)[segue destinationViewController];
     qs.currentCursus = _currentCursus;
+    qs.currentGebruiker = self.currentGebruiker;
     
     Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
     for(Vraag* vraag in nsasd.vragen){

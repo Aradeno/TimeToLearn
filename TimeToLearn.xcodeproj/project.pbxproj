@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843C71E8193FE4BD001F4737 /* QuizzesOverviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C71E7193FE4BD001F4737 /* QuizzesOverviewTableViewCell.m */; };
 		844ECC74191B8EC300C34CA4 /* QuizzesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ECC73191B8EC300C34CA4 /* QuizzesOverview.m */; };
 		844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ECC76191B903300C34CA4 /* DiscussionsOverview.m */; };
 		844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ECC79191B91A600C34CA4 /* DiscussionScreen.m */; };
@@ -82,6 +83,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		843C71E6193FE4BD001F4737 /* QuizzesOverviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizzesOverviewTableViewCell.h; sourceTree = "<group>"; };
+		843C71E7193FE4BD001F4737 /* QuizzesOverviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizzesOverviewTableViewCell.m; sourceTree = "<group>"; };
 		844ECC72191B8EC300C34CA4 /* QuizzesOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizzesOverview.h; sourceTree = "<group>"; };
 		844ECC73191B8EC300C34CA4 /* QuizzesOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizzesOverview.m; sourceTree = "<group>"; };
 		844ECC75191B903300C34CA4 /* DiscussionsOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionsOverview.h; sourceTree = "<group>"; };
@@ -209,6 +212,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		843C71E5193FE45E001F4737 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				843C71E6193FE4BD001F4737 /* QuizzesOverviewTableViewCell.h */,
+				843C71E7193FE4BD001F4737 /* QuizzesOverviewTableViewCell.m */,
+				84C7DBC719243F440036690C /* CoursesOverviewTableViewCell.h */,
+				84C7DBC819243F440036690C /* CoursesOverviewTableViewCell.m */,
+				84A656D01938A11800458C69 /* CourseInformationScreenTableViewCell.h */,
+				84A656D11938A11800458C69 /* CourseInformationScreenTableViewCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		84C52DB1192461680092C288 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +290,7 @@
 				84D782D2191B5D15004D008A /* Main.storyboard */,
 				84D782D8191B5D15004D008A /* Images.xcassets */,
 				84D782C7191B5D15004D008A /* Supporting Files */,
+				843C71E5193FE45E001F4737 /* TableViewCells */,
 				84D782F5191B5F59004D008A /* LoginScreen.h */,
 				84D782F6191B5F59004D008A /* LoginScreen.m */,
 				84D782FB191B5FC3004D008A /* CourseScreen.h */,
@@ -298,10 +315,6 @@
 				844ECC79191B91A600C34CA4 /* DiscussionScreen.m */,
 				84F2141C1924323500684158 /* CoursesOverview.h */,
 				84F2141D1924323500684158 /* CoursesOverview.m */,
-				84C7DBC719243F440036690C /* CoursesOverviewTableViewCell.h */,
-				84C7DBC819243F440036690C /* CoursesOverviewTableViewCell.m */,
-				84A656D01938A11800458C69 /* CourseInformationScreenTableViewCell.h */,
-				84A656D11938A11800458C69 /* CourseInformationScreenTableViewCell.m */,
 				8461F8981924C90A00884C2F /* TopNavigationController.h */,
 				8461F8991924C90A00884C2F /* TopNavigationController.m */,
 				F566AFBE1924D1E3002EF722 /* NotificationScreen.h */,
@@ -507,6 +520,7 @@
 			files = (
 				84E1801D1924C4B7001E13FB /* AFURLConnectionOperation.m in Sources */,
 				84A656D21938A11800458C69 /* CourseInformationScreenTableViewCell.m in Sources */,
+				843C71E8193FE4BD001F4737 /* QuizzesOverviewTableViewCell.m in Sources */,
 				844ECC7A191B91A600C34CA4 /* DiscussionScreen.m in Sources */,
 				84E180181924C4B7001E13FB /* AFHTTPRequestOperation.m in Sources */,
 				F566AFC01924D1E3002EF722 /* NotificationScreen.m in Sources */,

@@ -93,6 +93,8 @@ UIColor *originalButtonColor;
     // Pass the selected object to the new view controller.
     AnswerScreen* as = (AnswerScreen*)[segue destinationViewController];
     as.currentVraag = self.currentVraag;
+    as.currentGebruiker = self.currentGebruiker;
+    as.currentCursus = self.currentCursus;
     as.currentAnswer = @"";
     
     if(self.buttonA.backgroundColor == [UIColor greenColor]){

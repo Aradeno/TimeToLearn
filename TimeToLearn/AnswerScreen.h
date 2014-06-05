@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Objects.h"
+#import "CoursesOverview.h"
+#import "CourseChoiceScreen.h"
 
 @interface AnswerScreen : UIViewController
 
@@ -18,5 +20,7 @@
 
 @property Vraag* currentVraag;
 @property NSString *currentAnswer;
+@property Gebruiker *currentGebruiker;
+@property Cursus *currentCursus;
 
 @end

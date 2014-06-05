@@ -62,9 +62,11 @@
     if([[segue destinationViewController] isKindOfClass: [MagazineScreen class]]){
         MagazineScreen *mags = (MagazineScreen*)[segue destinationViewController];
         mags.currentCursus = self.currentCursus;
+        mags.currentGebruiker = self.currentGebruiker;
     } else {
         VideoScreen *vids = (VideoScreen*)[segue destinationViewController];
         vids.currentCursus = self.currentCursus;
+        vids.currentGebruiker = self.currentGebruiker;
     }
 }
 

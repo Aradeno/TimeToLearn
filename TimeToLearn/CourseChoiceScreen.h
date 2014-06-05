@@ -14,6 +14,7 @@
 @interface CourseChoiceScreen : UIViewController
 
 @property Cursus *currentCursus;
+@property Gebruiker *currentGebruiker;
 
 @property (weak, nonatomic) IBOutlet UIButton *videoBtn;
 @property (weak, nonatomic) IBOutlet UIButton *magazineBtn;

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuizzesOverviewTableViewCell.h"
 #import "Objects.h"
 
 @interface QuizzesOverview : UITableViewController
 
 @property Cursus *currentCursus;
+@property Gebruiker *currentGebruiker;
 
 @end

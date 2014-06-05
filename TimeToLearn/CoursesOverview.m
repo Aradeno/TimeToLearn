@@ -115,8 +115,11 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     NSIndexPath *nsip = [self.tableView indexPathForSelectedRow];
-    CourseInformationScreen* cis = [segue destinationViewController];
-    cis.currentCursus = [self.currentGebruiker.cursussen objectAtIndex:nsip.row];
+    if([[segue destinationViewController] isKindOfClass:[CourseInformationScreen class]]){
+        CourseInformationScreen* cis = [segue destinationViewController];
+        cis.currentCursus = [self.currentGebruiker.cursussen objectAtIndex:nsip.row];
+        cis.currentGebruiker = self.currentGebruiker;
+    }
 }
 
 @end

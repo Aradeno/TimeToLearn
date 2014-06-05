@@ -12,5 +12,6 @@
 @interface DiscussionsOverview : UITableViewController
 
 @property Cursus *currentCursus;
+@property Gebruiker *currentGebruiker;
 
 @end

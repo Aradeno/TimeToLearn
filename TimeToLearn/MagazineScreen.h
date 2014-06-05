@@ -12,5 +12,6 @@
 @interface MagazineScreen : UIViewController
 
 @property Cursus *currentCursus;
+@property Gebruiker *currentGebruiker;
 
 @end

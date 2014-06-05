@@ -158,14 +158,17 @@
         case 0:
             ccs = (CourseChoiceScreen*)[segue destinationViewController];
             ccs.currentCursus = self.currentCursus;
+            ccs.currentGebruiker = self.currentGebruiker;
             break;
         case 1:
             qo = (QuizzesOverview*)[segue destinationViewController];
             qo.currentCursus = self.currentCursus;
+            qo.currentGebruiker = self.currentGebruiker;
             break;
         case 2:
             diso = (DiscussionsOverview*)[segue destinationViewController];
             diso.currentCursus = self.currentCursus;
+            diso.currentGebruiker = self.currentGebruiker;
             break;
         case 3:
             break;

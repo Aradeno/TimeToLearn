@@ -93,15 +93,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXE-xV-shR">
-                                <rect key="frame" x="31" y="508" width="259" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.70957865259999997" blue="0.27994776319999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Ga verder">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="271" translatesAutoresizingMaskIntoConstraints="NO" id="9Na-O4-dr6">
                                 <rect key="frame" x="25" y="96" width="271" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -116,6 +107,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eth-0v-hH6" kind="push" id="mvq-OG-mwn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asK-jM-pR0">
                                 <rect key="frame" x="25" y="410" width="271" height="30"/>
@@ -125,6 +119,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="B4V-my-Exk" kind="push" id="LGO-Ge-sZy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,36 +142,43 @@
         <scene sceneID="7gT-EM-AFt">
             <objects>
                 <tableViewController id="NC5-LW-hgJ" customClass="QuizzesOverview" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WJq-2C-L8c">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WJq-2C-L8c">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="IC0-pa-4Av">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="quizzesOverviewTableViewCell" id="IC0-pa-4Av" customClass="QuizzesOverviewTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IC0-pa-4Av" id="MSH-RL-NU1">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pEq-RX-7dA">
-                                            <rect key="frame" x="58" y="32" width="150" height="2"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </progressView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BF5-gS-FQ5">
                                             <rect key="frame" x="10" y="2" width="40" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoP-1D-iLT">
-                                            <rect key="frame" x="58" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="58" y="11" width="242" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="hMp-6H-Q2g">
+                                            <rect key="frame" x="58" y="35" width="205" height="3"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.99607849120000003" green="0.70588237050000002" blue="0.2823529541" alpha="1" colorSpace="deviceRGB"/>
+                                        </progressView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.96202021059999998" green="0.96202021059999998" blue="0.96202021059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="image" destination="BF5-gS-FQ5" id="4zx-xL-Obn"/>
+                                    <outlet property="progressbar" destination="hMp-6H-Q2g" id="sXT-mH-i2L"/>
+                                    <outlet property="tekstLes" destination="LoP-1D-iLT" id="Kal-4C-v3B"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -188,7 +192,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l91-Qp-8NS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="-748"/>
+            <point key="canvasLocation" x="854" y="-828"/>
         </scene>
         <!--Discussions Overview-->
         <scene sceneID="wc8-zo-NcL">
@@ -263,11 +267,10 @@
                             </connections>
                         </button>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="prt-Xy-gTQ">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mrx-R9-6Yf">
-                                <rect key="frame" x="233" y="5" width="71" height="33"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="mrx-R9-6Yf">
+                                <rect key="frame" x="282" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="+">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -469,7 +472,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7Q-9i-UhU">
-                                <rect key="frame" x="0.0" y="-47" width="320" height="198"/>
+                                <rect key="frame" x="0.0" y="-47" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -537,7 +540,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cfh-dt-Hjk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vraag 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7x-pC-QsJ">
@@ -767,4 +770,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="gxy-Ns-vJ4"/>
+        <segue reference="Pba-kJ-XbO"/>
+    </inferredMetricsTieBreakers>
 </document>

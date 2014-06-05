@@ -44,28 +44,40 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.currentCursus.lessen.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    QuizzesOverviewTableViewCell *cell = (QuizzesOverviewTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"quizzesOverviewTableViewCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    Les *les = [self.currentCursus.lessen objectAtIndex:indexPath.row];
+    cell.tekstLes.text = les.titel;
+    
+    [cell.tekstLes setAdjustsFontSizeToFitWidth:YES];
+    
+    NSInteger answered = 0;
+    for(NSInteger i = 0; i < les.vragen.count; i++){
+        Vraag *vraag = [les.vragen objectAtIndex:i];
+        if(vraag.beantwoord){
+            answered++;
+            NSLog(@"TEST");
+        }
+    }
+    
+    if(answered != 0){
+        [cell.progressbar setProgress:((float)answered / (float)les.vragen.count) animated:YES];
+    }
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
