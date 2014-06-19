@@ -17,9 +17,11 @@
 @property NSString* videoTitel;
 @property NSString* videoURL;
 @property NSString* magazineTitel;
+@property NSString* magazineText;
+@property NSString* magazineURL;
+@property NSString* magazineIdentifier;
 @property NSString* quizvraag;
 @property NSString* antwoord;
-@property NSMutableArray* magazines;
 @property NSMutableArray* opties;
 @property BOOL beantwoord;
 @property NSArray *keys;
