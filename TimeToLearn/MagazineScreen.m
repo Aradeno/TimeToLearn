@@ -13,6 +13,8 @@
 @end
 
 @implementation MagazineScreen
+@synthesize currentCursus;
+@synthesize currentGebruiker;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
