@@ -59,11 +59,13 @@
     DiscussionsOverviewTableViewCell *cell = (DiscussionsOverviewTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"discussionsOverviewTableViewCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    [cell.datumTijd setAdjustsFontSizeToFitWidth:YES];
     
     Bericht* bericht = [self.currentCursus.berichten objectAtIndex:indexPath.row];
     
     cell.berichtTitel.text = bericht.berichtTitel;
     cell.datumTijd.text = bericht.datumTijd;
+    NSLog(@"%@", cell.datumTijd.text);
     
     return cell;
 }
