@@ -13,5 +13,8 @@
 
 @property Cursus *currentCursus;
 @property Gebruiker *currentGebruiker;
+@property (weak, nonatomic) IBOutlet UILabel *magazineTitel;
+@property (weak, nonatomic) IBOutlet UITextView *magazineTekst;
+@property (weak, nonatomic) IBOutlet UIImageView *magazineImage;
 
 @end

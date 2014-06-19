@@ -37,6 +37,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
+    for(Vraag* vraag in nsasd.vragen){
+        if(vraag.beantwoord == NO){
+            self.magazineTitel.text = vraag.magazineTitel;
+            self.magazineTekst.text =vraag.magazineText;
+            return;
+        }
+    }
+    
+}
+
 /*
 #pragma mark - Navigation
 
