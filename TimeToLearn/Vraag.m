@@ -13,8 +13,7 @@
 - (id) init
 {
     if(self == [super init]) {
-        self.keys = [NSArray arrayWithObjects:@"vraag_id", @"les_id",@"index", @"video_url", @"video_titel", @"magazine_titel", @"magazine1", @"magazine2", @"magazine3", @"quizvraag", @"antwoord", @"optie1", @"optie2", @"optie3", nil];
-        self.magazines = [[NSMutableArray alloc] init];
+        self.keys = [NSArray arrayWithObjects:@"vraag_id", @"les_id",@"index", @"video_url", @"video_titel", @"magazine_titel", @"magazine_text", @"magazine_url", @"magazine_identifier", @"quizvraag", @"antwoord", @"optie1", @"optie2", @"optie3", nil];
         self.opties = [[NSMutableArray alloc] init];
         self.beantwoord = NO;
     }
@@ -30,9 +29,9 @@
     self.videoURL = [values objectAtIndex:3];
     self.videoTitel = [values objectAtIndex:4];
     self.magazineTitel = [values objectAtIndex:5];
-    [self.magazines addObject:[values objectAtIndex:6]];
-    [self.magazines addObject:[values objectAtIndex:7]];
-    [self.magazines addObject:[values objectAtIndex:8]];
+    self.magazineText = [values objectAtIndex:6];
+    self.magazineURL = [values objectAtIndex:7];
+    self.magazineIdentifier = [values objectAtIndex:8];
     self.quizvraag = [values objectAtIndex:9];
     self.antwoord = [values objectAtIndex:10];
     [self.opties addObject:[values objectAtIndex:11]];
