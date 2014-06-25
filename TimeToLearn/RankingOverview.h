@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Objects.h"
 #import "RankingOverviewTableViewCell.h"
+#import "TopNavigationController.h"
 
 @interface RankingOverview : UITableViewController
 

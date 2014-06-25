@@ -42,6 +42,12 @@
 
 #pragma mark - Table view data source
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    TopNavigationController* tnc = (TopNavigationController*)[self parentViewController];
+    self.gebruikers = tnc.gebruikers;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.

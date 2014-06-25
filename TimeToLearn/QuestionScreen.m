@@ -95,6 +95,7 @@ UIColor *originalButtonColor;
     as.currentVraag = self.currentVraag;
     as.currentGebruiker = self.currentGebruiker;
     as.currentCursus = self.currentCursus;
+    as.currentLes = self.currentLes;
     as.currentAnswer = @"";
     
     if(self.buttonA.backgroundColor == [UIColor greenColor]){

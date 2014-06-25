@@ -26,5 +26,6 @@
 @property Cursus *currentCursus;
 @property Vraag* currentVraag;
 @property Gebruiker *currentGebruiker;
+@property Les *currentLes;
 
 @end

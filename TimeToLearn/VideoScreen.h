@@ -15,6 +15,7 @@
 
 @property Cursus *currentCursus;
 @property Gebruiker *currentGebruiker;
+@property Les* currentLes;
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIButton *btnGaVerder;

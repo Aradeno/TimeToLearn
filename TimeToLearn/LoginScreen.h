@@ -18,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnLogIn;
 
 @property Gebruiker* currentGebruiker;
-@property NSMutableArray *gebruikers;
 
 - (IBAction)inloggen:(id)sender;
 

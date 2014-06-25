@@ -38,14 +38,12 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     self.webView.scrollView.scrollEnabled = NO;
-    Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
-    for(Vraag* vraag in nsasd.vragen){
+    for(Vraag* vraag in self.currentLes.vragen){
         if(vraag.beantwoord == NO){
             NSURL *urlVideo = [NSURL URLWithString:vraag.videoURL];
             NSURLRequest *request = [NSURLRequest requestWithURL:urlVideo];
             [self.webView loadRequest:request];
             self.videoTitel.text = vraag.videoTitel;
-            //self.videoBeschrijving = vraag.
             return;
         }
     }
@@ -69,9 +67,9 @@
     QuestionScreen *qs = (QuestionScreen*)[segue destinationViewController];
     qs.currentCursus = _currentCursus;
     qs.currentGebruiker = self.currentGebruiker;
+    qs.currentLes = self.currentLes;
     
-    Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
-    for(Vraag* vraag in nsasd.vragen){
+    for(Vraag* vraag in self.currentLes.vragen){
         if(vraag.beantwoord == NO){
             qs.currentVraag = vraag;
             break;

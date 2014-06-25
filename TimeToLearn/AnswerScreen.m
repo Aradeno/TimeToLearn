@@ -65,8 +65,19 @@
             self.nextBtn.hidden = NO;
         }
     }
+    
+    for(Vraag *vraag in self.currentLes.vragen){
+        NSLog(@"Vraag:%@ beantwoord%hhd", vraag.vraagId, vraag.beantwoord);
+    }
+    
+    for(Vraag *vraag in self.currentLes.vragen){
+        if(vraag.beantwoord == NO){
+            return;
+        }
+    }
+    
+    self.currentLes.voltooid = YES;
 }
-
 
 #pragma mark - Navigation
 

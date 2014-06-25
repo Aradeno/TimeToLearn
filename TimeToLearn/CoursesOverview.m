@@ -69,7 +69,14 @@
     return cell;
 }
 
-
+-(void)viewDidAppear:(BOOL)animated
+{
+    if(self.toCursus != nil){
+        UIAlertView  *alertView = [[UIAlertView alloc] initWithTitle:@"Gefeliciteerd" message:[NSString stringWithFormat:@"U hebt de cursus voltooid."] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
+        [self performSegueWithIdentifier:@"pushToCourseInformationScreen" sender:self];
+    }
+}
 /*
  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -116,11 +123,17 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     NSIndexPath *nsip = [self.tableView indexPathForSelectedRow];
+
+    
     if([[segue destinationViewController] isKindOfClass:[CourseInformationScreen class]]){
         CourseInformationScreen* cis = [segue destinationViewController];
+        if(self.toCursus == nil){
         cis.currentCursus = [self.currentGebruiker.cursussen objectAtIndex:nsip.row];
+        } else {
+            cis.currentCursus = self.toCursus;
+            self.toCursus = nil;
+        }
         cis.currentGebruiker = self.currentGebruiker;
-        cis.gebruikers = self.gebruikers;
     }
 }
 

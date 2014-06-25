@@ -18,6 +18,5 @@
 
 @property Cursus* currentCursus;
 @property Gebruiker* currentGebruiker;
-@property NSMutableArray *gebruikers;
 
 @end

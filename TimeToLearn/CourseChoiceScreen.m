@@ -41,14 +41,16 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillAppear:(BOOL)animated
+-(void)viewDidAppear:(BOOL)animated
 {
     for (Les* les in self.currentCursus.lessen){
-        if(!les.voltooid){
+        if(les.voltooid == NO){
             self.currentLes = les;
             return;
         }
     }
+    
+    [self performSegueWithIdentifier:@"pushBackToCoursesOverview" sender:self];
 }
 
 - (IBAction)btnMagazine:(id)sender
@@ -73,11 +75,19 @@
         MagazineScreen *mags = (MagazineScreen*)[segue destinationViewController];
         mags.currentCursus = self.currentCursus;
         mags.currentGebruiker = self.currentGebruiker;
+        mags.currentLes = self.currentLes;
     } else {
         if([segue.identifier isEqual:@"pushToVideoScreen"]){
             VideoScreen *vids = (VideoScreen*)[segue destinationViewController];
             vids.currentCursus = self.currentCursus;
             vids.currentGebruiker = self.currentGebruiker;
+            vids.currentLes = self.currentLes;
+        } else {
+            if([segue.identifier isEqualToString:@"pushBackToCoursesOverview"]){
+                CoursesOverview *co = (CoursesOverview*)[segue destinationViewController];
+                co.currentGebruiker = self.currentGebruiker;
+                co.toCursus = self.currentCursus;
+            }
         }
     }
 }

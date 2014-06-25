@@ -185,7 +185,6 @@
             break;
         case 3:
             ro = (RankingOverview*)[segue destinationViewController];
-            ro.gebruikers = self.gebruikers;
             break;
     }
 }

@@ -22,5 +22,6 @@
 @property NSString *currentAnswer;
 @property Gebruiker *currentGebruiker;
 @property Cursus *currentCursus;
+@property Les *currentLes;
 
 @end
