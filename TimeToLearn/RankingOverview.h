@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
+#import "RankingOverviewTableViewCell.h"
 
 @interface RankingOverview : UITableViewController
+
+@property NSMutableArray *gebruikers;
 
 @end

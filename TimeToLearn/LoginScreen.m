@@ -48,6 +48,7 @@ NSInteger count;
     
     TopNavigationController* controller = (TopNavigationController*)[self parentViewController];
     self.currentGebruiker = [controller findGebruikerByName:txtGebruikersnaam.text];
+    self.gebruikers = [controller.gebruikers copy];
     
     if(self.currentGebruiker != nil && ([txtGebruikersnaam.text isEqual:self.currentGebruiker.gebruikersnaam] && [txtWachtwoord.text isEqual:self.currentGebruiker.wachtwoord])){
         [self performSegueWithIdentifier:@"pushToCoursesOverview" sender:self];
@@ -126,6 +127,7 @@ NSInteger count;
  // Pass the selected object to the new view controller.
      CoursesOverview* co = (CoursesOverview*)[segue destinationViewController];
      co.currentGebruiker = self.currentGebruiker;
+     co.gebruikers = self.gebruikers;
  }
 
 @end

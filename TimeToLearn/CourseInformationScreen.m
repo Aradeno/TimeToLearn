@@ -154,6 +154,7 @@
     CourseChoiceScreen *ccs;
     QuizzesOverview* qo;
     DiscussionsOverview *diso;
+    RankingOverview *ro;
     
     switch(nsindexPath.row){
         case 0:
@@ -172,6 +173,8 @@
             diso.currentGebruiker = self.currentGebruiker;
             break;
         case 3:
+            ro = (RankingOverview*)[segue destinationViewController];
+            ro.gebruikers = self.gebruikers;
             break;
     }
 }
