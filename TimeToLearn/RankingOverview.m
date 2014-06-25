@@ -66,7 +66,10 @@
     cell.labelRanking.text = [NSString stringWithFormat:@" %d",indexPath.row+1];
     [cell.imageProfile setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:gebruiker.userImage]]]];
     cell.labelScore.text = [NSString stringWithFormat:@"%i",gebruiker.score];
-    
+
+    CALayer *imgLayer = [cell.imageProfile layer];
+    [imgLayer setMasksToBounds:YES];
+    [imgLayer setCornerRadius:27.0f];
     // Configure the cell...
     
     return cell;
