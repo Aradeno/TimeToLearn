@@ -16,8 +16,9 @@
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property (weak, nonatomic) IBOutlet UITextField *berichtTekst;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationBar;
-@property NSString *currentDiscussion;
+@property Bericht *currentDiscussion;
 @property Gebruiker *currentGebruiker;
+@property (weak, nonatomic) IBOutlet UITextView *discussionTekst;
 
 - (IBAction)stuurBtn:(id)sender;
 -(IBAction)textFieldReturn:(id)sender;
