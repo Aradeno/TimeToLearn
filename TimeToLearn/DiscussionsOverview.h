@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Objects.h"
+#import "DiscussionScreen.h"
 #import "DiscussionsOverviewTableViewCell.h"
 
 @interface DiscussionsOverview : UITableViewController

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Objects.h"
 
 @interface DiscussionScreen : UIViewController<UITableViewDelegate, UITableViewDataSource>
 {
@@ -14,8 +15,11 @@
 }
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property (weak, nonatomic) IBOutlet UITextField *berichtTekst;
-
+@property (weak, nonatomic) IBOutlet UINavigationItem *navigationBar;
+@property NSString *currentDiscussion;
+@property Gebruiker *currentGebruiker;
 
 - (IBAction)stuurBtn:(id)sender;
+-(IBAction)textFieldReturn:(id)sender;
 
 @end

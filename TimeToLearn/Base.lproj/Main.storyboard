@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S7L-hA-1DW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="S7L-hA-1DW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Top Navigation Controller-->
@@ -373,6 +373,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="umT-6h-ore" eventType="editingDidEndOnExit" id="hZ0-zj-YJA"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -381,6 +384,7 @@
                     <connections>
                         <outlet property="berichtTekst" destination="Zqd-im-taQ" id="s7n-z2-IE4"/>
                         <outlet property="myTableView" destination="ljS-6s-gn6" id="Zlo-aK-doW"/>
+                        <outlet property="navigationBar" destination="U9o-ca-wSZ" id="REg-9f-Ly9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTF-UB-XyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
