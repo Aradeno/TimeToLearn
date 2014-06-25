@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *magazineTekst;
 @property (weak, nonatomic) IBOutlet UIImageView *magazineImage;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
 
 @end
