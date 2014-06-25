@@ -19,6 +19,7 @@
 @property Bericht *currentDiscussion;
 @property Gebruiker *currentGebruiker;
 @property (weak, nonatomic) IBOutlet UITextView *discussionTekst;
+@property (weak, nonatomic) IBOutlet UIButton *stuurBtn;
 
 - (IBAction)stuurBtn:(id)sender;
 -(IBAction)textFieldReturn:(id)sender;

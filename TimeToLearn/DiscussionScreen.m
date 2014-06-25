@@ -33,6 +33,10 @@
     self.navigationBar.title = self.currentDiscussion.berichtTitel;
     self.discussionTekst.text = self.currentDiscussion.berichtTekst;
     
+    CALayer *btnLayer = [_stuurBtn layer];
+    [btnLayer setMasksToBounds:YES];
+    [btnLayer setCornerRadius:5.0f];
+    
 }
 
 - (void)didReceiveMemoryWarning
