@@ -41,6 +41,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    for (Les* les in self.currentCursus.lessen){
+        if(!les.voltooid){
+            self.currentLes = les;
+            return;
+        }
+    }
+}
+
 - (IBAction)btnMagazine:(id)sender
 {
     [self performSegueWithIdentifier:@"pushToMagazineScreen" sender:self];
@@ -59,14 +69,16 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if([[segue destinationViewController] isKindOfClass: [MagazineScreen class]]){
+    if([segue.identifier isEqual:@"pushToMagazineScreen"]){
         MagazineScreen *mags = (MagazineScreen*)[segue destinationViewController];
         mags.currentCursus = self.currentCursus;
         mags.currentGebruiker = self.currentGebruiker;
     } else {
-        VideoScreen *vids = (VideoScreen*)[segue destinationViewController];
-        vids.currentCursus = self.currentCursus;
-        vids.currentGebruiker = self.currentGebruiker;
+        if([segue.identifier isEqual:@"pushToVideoScreen"]){
+            VideoScreen *vids = (VideoScreen*)[segue destinationViewController];
+            vids.currentCursus = self.currentCursus;
+            vids.currentGebruiker = self.currentGebruiker;
+        }
     }
 }
 

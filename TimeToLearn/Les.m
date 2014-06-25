@@ -26,6 +26,7 @@
     self.cursusId = [values objectAtIndex:1];
     self.titel = [values objectAtIndex:2];
     self.omschrijving = [values objectAtIndex:3];
+    self.voltooid = NO;
 }
 
 - (NSArray*) getKeys

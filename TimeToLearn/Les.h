@@ -17,6 +17,7 @@
 @property NSString* omschrijving;
 @property NSArray* keys;
 @property NSMutableArray* vragen;
+@property BOOL voltooid;
 
 - (void) setKeyValues:(NSMutableArray *)values;
 - (NSArray*) getKeys;

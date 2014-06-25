@@ -87,9 +87,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIAlertView *alertView;
     switch(indexPath.row){
         case 0:
-            [self performSegueWithIdentifier:@"pushToCourseChoiceScreen" sender:self];
+            
+            for(Les* les in self.currentCursus.lessen){
+                if(!les.voltooid){
+                    [self performSegueWithIdentifier:@"pushToCourseChoiceScreen" sender:self];
+                    return;
+                }
+            }
+            
+            alertView = [[UIAlertView alloc] initWithTitle:@"Cursus voltooid" message:[NSString stringWithFormat:@"U hebt de cursus voltooid."] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alertView show];
+            
             break;
         case 1:
             [self performSegueWithIdentifier:@"pushToQuizzesOverview" sender:self];

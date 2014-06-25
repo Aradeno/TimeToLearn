@@ -15,6 +15,7 @@
 
 @property Cursus *currentCursus;
 @property Gebruiker *currentGebruiker;
+@property Les* currentLes;
 
 @property (weak, nonatomic) IBOutlet UIButton *videoBtn;
 @property (weak, nonatomic) IBOutlet UIButton *magazineBtn;
