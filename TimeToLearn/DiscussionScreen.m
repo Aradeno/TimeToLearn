@@ -29,11 +29,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     myArray = [NSMutableArray array];
-    [myArray addObject:@"first string"]; // same with float values
-    [myArray addObject:@"second string"];
-    [myArray addObject:@"third string"];
     [self.myTableView reloadData];
-    self.berichtTekst.text = @"testttt";
+    self.navigationBar.title = self.currentDiscussion;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,8 +61,33 @@
 }
 
 - (IBAction)stuurBtn:(id)sender {
-    if(self.berichtTekst !=nil){
-        //[myArray
+    //tekstbericht sturen
+    if(self.berichtTekst.text !=nil){
+        NSString *nieuwBericht = [NSString stringWithFormat:@"%@: %@", self.currentGebruiker.gebruikersnaam, self.berichtTekst.text];
+        [myArray addObject:nieuwBericht];
+    }
+    //tableview herladen
+    [self.myTableView reloadData];
+    
+    //automatisch scrollen
+    [self.myTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[myArray count]-1 inSection:0]
+                     atScrollPosition:UITableViewScrollPositionBottom
+                             animated:YES];
+}
+-(IBAction)textFieldReturn:(id)sender
+{
+    //Toetsenbord wordt weggehaald wanneer er op return wordt geklikt.
+    [sender resignFirstResponder];
+}
+
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    // Het toetsenbord weghalen wanneer er ergens anders wordt geklikt, (werkt om de een of andere reden niet)
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([_berichtTekst isFirstResponder] && [touch view] != _berichtTekst) {
+        [_berichtTekst resignFirstResponder];
+        [super touchesBegan:touches withEvent:event];
     }
 }
+
 @end

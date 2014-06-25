@@ -108,7 +108,7 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -116,7 +116,15 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSIndexPath *nsip = [self.tableView indexPathForSelectedRow];
+
+        DiscussionScreen* cis = [segue destinationViewController];
+        cis.currentGebruiker = self.currentGebruiker;
+    
+    Bericht *b =[self.currentCursus.berichten objectAtIndex:nsip.row];
+    cis.currentDiscussion = b.berichtTitel;
+    
 }
-*/
+
 
 @end
