@@ -1,18 +1,18 @@
 //
-//  QuizzesOverview.m
+//  RankingOverview.m
 //  TimeToLearn
 //
-//  Created by admin on 5/8/14.
+//  Created by admin on 6/25/14.
 //  Copyright (c) 2014 TIS. All rights reserved.
 //
 
-#import "QuizzesOverview.h"
+#import "RankingOverview.h"
 
-@interface QuizzesOverview ()
+@interface RankingOverview ()
 
 @end
 
-@implementation QuizzesOverview
+@implementation RankingOverview
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -44,42 +44,28 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.currentCursus.lessen.count;
+    return 0;
 }
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    QuizzesOverviewTableViewCell *cell = (QuizzesOverviewTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"quizzesOverviewTableViewCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    Les *les = [self.currentCursus.lessen objectAtIndex:indexPath.row];
-    cell.tekstLes.text = les.titel;
-    
-    [cell.tekstLes setAdjustsFontSizeToFitWidth:YES];
-    
-    [cell.image setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.currentCursus.imgURL]]]];
-    
-    NSInteger answered = 0;
-    for(NSInteger i = 0; i < les.vragen.count; i++){
-        Vraag *vraag = [les.vragen objectAtIndex:i];
-        if(vraag.beantwoord){
-            answered++;
-            NSLog(@"TEST");
-        }
-    }
-    
-    if(answered != 0){
-        [cell.progressbar setProgress:((float)answered / (float)les.vragen.count) animated:YES];
-    }
+    // Configure the cell...
     
     return cell;
 }
+*/
 
 /*
 // Override to support conditional editing of the table view.

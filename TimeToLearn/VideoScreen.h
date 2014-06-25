@@ -18,8 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIButton *btnGaVerder;
-@property (weak, nonatomic) IBOutlet UILabel *lesTitel;
 @property (weak, nonatomic) IBOutlet UILabel *videoTitel;
-@property (weak, nonatomic) IBOutlet UILabel *vraagTitel;
+@property (weak, nonatomic) IBOutlet UITextView *videoBeschrijving;
 
 @end

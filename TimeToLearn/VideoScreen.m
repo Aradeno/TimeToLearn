@@ -45,8 +45,7 @@
             NSURLRequest *request = [NSURLRequest requestWithURL:urlVideo];
             [self.webView loadRequest:request];
             self.videoTitel.text = vraag.videoTitel;
-            self.lesTitel.text = @"Les  1";
-            self.vraagTitel.text = [NSString stringWithFormat:@"Vraag %i", vraag.index + 1];
+            //self.videoBeschrijving = vraag.
             return;
         }
     }
