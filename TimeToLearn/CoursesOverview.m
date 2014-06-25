@@ -64,6 +64,7 @@
     [cell.courseTitle setAdjustsFontSizeToFitWidth:YES];
     Cursus* cursus = [self.currentGebruiker.cursussen objectAtIndex:indexPath.row];
     cell.courseTitle.text = cursus.naamCursus;
+    [cell.courseImage setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:cursus.imgURL]]]];
     
     return cell;
 }

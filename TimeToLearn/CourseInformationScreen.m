@@ -98,6 +98,7 @@
             [self performSegueWithIdentifier:@"pushToDiscussionsOverview" sender:self];
             break;
         case 3:
+            [self performSegueWithIdentifier:@"pushToRankingOverview" sender:self];
             break;
     }
 }
