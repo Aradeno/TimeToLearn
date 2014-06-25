@@ -12,10 +12,12 @@
 #import "CourseChoiceScreen.h"
 #import "QuizzesOverview.h"
 #import "DiscussionsOverview.h"
+#import "RankingOverview.h"
 
 @interface CourseInformationScreen : UITableViewController
 
 @property Cursus* currentCursus;
 @property Gebruiker* currentGebruiker;
+@property NSMutableArray *gebruikers;
 
 @end

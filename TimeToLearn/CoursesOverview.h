@@ -14,5 +14,6 @@
 @interface CoursesOverview : UITableViewController
 
 @property Gebruiker* currentGebruiker;
+@property NSMutableArray *gebruikers;
 
 @end

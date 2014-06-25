@@ -15,6 +15,7 @@
 @property NSString* gebruikersnaam;
 @property NSString* wachtwoord;
 @property NSInteger score;
+@property NSString *userImage;
 @property NSMutableArray* cursussen;
 @property NSMutableArray* berichten;
 @property NSArray *keys;

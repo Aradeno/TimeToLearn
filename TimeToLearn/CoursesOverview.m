@@ -120,6 +120,7 @@
         CourseInformationScreen* cis = [segue destinationViewController];
         cis.currentCursus = [self.currentGebruiker.cursussen objectAtIndex:nsip.row];
         cis.currentGebruiker = self.currentGebruiker;
+        cis.gebruikers = self.gebruikers;
     }
 }
 

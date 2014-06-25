@@ -44,28 +44,33 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.gebruikers.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    RankingOverviewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rankingOverviewTableViewCell" forIndexPath:indexPath];
+    
+    // Configure the cell...
+    Gebruiker *gebruiker = [self.gebruikers objectAtIndex:indexPath.row];
+    [cell.labelProfileName setAdjustsFontSizeToFitWidth:YES];
+    cell.labelProfileName.text = gebruiker.gebruikersnaam;
+    cell.labelRanking.text = [NSString stringWithFormat:@" %d",indexPath.row+1];
+    [cell.imageProfile setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:gebruiker.userImage]]]];
+    cell.labelScore.text = [NSString stringWithFormat:@"%i",gebruiker.score];
     
     // Configure the cell...
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
