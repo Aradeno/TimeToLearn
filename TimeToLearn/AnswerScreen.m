@@ -31,6 +31,10 @@
     [btnLayer setMasksToBounds:YES];
     [btnLayer setCornerRadius:5.0f];
     
+    CALayer *btnLayer2 = [_hoofdmenuBtn layer];
+    [btnLayer2 setMasksToBounds:YES];
+    [btnLayer2 setCornerRadius:5.0f];
+    
     [self.lbAntwoordCheck setAdjustsFontSizeToFitWidth:YES];
 }
 

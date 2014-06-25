@@ -66,6 +66,7 @@
 		84E1801E1924C4B7001E13FB /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180131924C4B7001E13FB /* AFURLRequestSerialization.m */; };
 		84E1801F1924C4B7001E13FB /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180151924C4B7001E13FB /* AFURLResponseSerialization.m */; };
 		84E180201924C4B7001E13FB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180171924C4B7001E13FB /* AFURLSessionManager.m */; };
+		84E38F62195ACCA70004A4ED /* RankingOverviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E38F61195ACCA70004A4ED /* RankingOverviewTableViewCell.m */; };
 		84E54CB2194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E54CB1194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m */; };
 		84EDE57C195A669800AA5C9D /* RankingOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDE57B195A669800AA5C9D /* RankingOverview.m */; };
 		84F2141E1924323500684158 /* CoursesOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2141D1924323500684158 /* CoursesOverview.m */; };
@@ -180,6 +181,8 @@
 		84E180151924C4B7001E13FB /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		84E180161924C4B7001E13FB /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		84E180171924C4B7001E13FB /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		84E38F60195ACCA70004A4ED /* RankingOverviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingOverviewTableViewCell.h; sourceTree = "<group>"; };
+		84E38F61195ACCA70004A4ED /* RankingOverviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingOverviewTableViewCell.m; sourceTree = "<group>"; };
 		84E54CB0194058A000E60DE1 /* DiscussionsOverviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionsOverviewTableViewCell.h; sourceTree = "<group>"; };
 		84E54CB1194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionsOverviewTableViewCell.m; sourceTree = "<group>"; };
 		84EDE57A195A669800AA5C9D /* RankingOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingOverview.h; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				84A656D11938A11800458C69 /* CourseInformationScreenTableViewCell.m */,
 				84E54CB0194058A000E60DE1 /* DiscussionsOverviewTableViewCell.h */,
 				84E54CB1194058A000E60DE1 /* DiscussionsOverviewTableViewCell.m */,
+				84E38F60195ACCA70004A4ED /* RankingOverviewTableViewCell.h */,
+				84E38F61195ACCA70004A4ED /* RankingOverviewTableViewCell.m */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -565,6 +570,7 @@
 				F566AFC3192D6A97002EF722 /* AddNotification.m in Sources */,
 				844ECC77191B903300C34CA4 /* DiscussionsOverview.m in Sources */,
 				84AA520C191B896400602164 /* CourseChoiceScreen.m in Sources */,
+				84E38F62195ACCA70004A4ED /* RankingOverviewTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
