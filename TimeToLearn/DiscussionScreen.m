@@ -30,7 +30,8 @@
 	// Do any additional setup after loading the view.
     myArray = [NSMutableArray array];
     [self.myTableView reloadData];
-    self.navigationBar.title = self.currentDiscussion;
+    self.navigationBar.title = self.currentDiscussion.berichtTitel;
+    self.discussionTekst.text = self.currentDiscussion.berichtTekst;
     
 }
 

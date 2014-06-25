@@ -7,6 +7,7 @@
 //
 
 #import "DiscussionsOverview.h"
+#import "TopNavigationController.h"
 
 @interface DiscussionsOverview ()
 
@@ -65,6 +66,11 @@
     
     cell.berichtTitel.text = bericht.berichtTitel;
     cell.datumTijd.text = bericht.datumTijd;
+    
+    
+    TopNavigationController* controller = (TopNavigationController*)[self parentViewController];
+    Gebruiker *g = [controller findGebruiker:bericht.userId];
+    [cell.image setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:g.userImage]]]];
     NSLog(@"%@", cell.datumTijd.text);
     
     return cell;
@@ -121,8 +127,7 @@
         DiscussionScreen* cis = [segue destinationViewController];
         cis.currentGebruiker = self.currentGebruiker;
     
-    Bericht *b =[self.currentCursus.berichten objectAtIndex:nsip.row];
-    cis.currentDiscussion = b.berichtTitel;
+    cis.currentDiscussion  =[self.currentCursus.berichten objectAtIndex:nsip.row];
     
 }
 
