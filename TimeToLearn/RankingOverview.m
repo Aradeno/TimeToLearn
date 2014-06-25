@@ -46,6 +46,10 @@
 {
     TopNavigationController* tnc = (TopNavigationController*)[self parentViewController];
     self.gebruikers = tnc.gebruikers;
+    
+    NSSortDescriptor *sortGebruikerDescriptor = [[NSSortDescriptor alloc] initWithKey:@"score" ascending:NO];
+    
+    [self.gebruikers sortUsingDescriptors:[NSArray arrayWithObject:sortGebruikerDescriptor]];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

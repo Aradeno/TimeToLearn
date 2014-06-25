@@ -51,6 +51,7 @@
         self.lbSuggestie.text = @"U kunt doorgaan naar de volgende vraag of teruggaan naar het menu.";
         self.currentVraag.beantwoord = YES;
         self.navigationItem.hidesBackButton = YES;
+        self.currentGebruiker.score += 5;
         self.nextBtn.hidden = NO;
     } else {
         if(self.currentAnswer.length == 0){
