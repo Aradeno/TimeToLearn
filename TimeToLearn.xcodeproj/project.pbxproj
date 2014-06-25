@@ -79,7 +79,6 @@
 		F58A63CE195B3BED004AAFEC /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = F58A63C7195B3BED004AAFEC /* 640x960.png */; };
 		F58A63CF195B3BED004AAFEC /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = F58A63C8195B3BED004AAFEC /* 640x1136.png */; };
 		F58A63D0195B3BED004AAFEC /* 1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = F58A63C9195B3BED004AAFEC /* 1024x1024.png */; };
-		F58A63D2195B3C25004AAFEC /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58A63D1195B3C25004AAFEC /* Images-2.xcassets */; };
 		F58A63D4195B3E03004AAFEC /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = F58A63D3195B3E03004AAFEC /* 80x80.png */; };
 		F5BB837D195AD2D00059F597 /* DiscussionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB837C195AD2D00059F597 /* DiscussionScreen.m */; };
 /* End PBXBuildFile section */
@@ -524,7 +523,6 @@
 			files = (
 				84D47E15193F6082001FAD7A /* account@2x.png in Resources */,
 				84D47E16193F6082001FAD7A /* berichten@2x.png in Resources */,
-				F58A63D2195B3C25004AAFEC /* Images-2.xcassets in Resources */,
 				84D47E17193F6082001FAD7A /* meldingen_navbar@2x.png in Resources */,
 				84D47E18193F6082001FAD7A /* meldingen@2x.png in Resources */,
 				F58A63CB195B3BED004AAFEC /* 120x120.png in Resources */,
