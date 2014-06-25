@@ -13,8 +13,6 @@
 @end
 
 @implementation MagazineScreen
-@synthesize currentCursus;
-@synthesize currentGebruiker;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,6 +40,9 @@
     Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
     for(Vraag* vraag in nsasd.vragen){
         if(vraag.beantwoord == NO){
+            NSURL *urlMagazine = [NSURL URLWithString:vraag.magazineURL];
+            NSURLRequest *request = [NSURLRequest requestWithURL:urlMagazine];
+            [self.webView loadRequest:request];
             self.magazineTitel.text = vraag.magazineTitel;
             self.magazineTekst.text =vraag.magazineText;
             return;
@@ -50,15 +51,26 @@
     
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ QuestionScreen *qs = (QuestionScreen*)[segue destinationViewController];
+ qs.currentCursus = _currentCursus;
+ qs.currentGebruiker = self.currentGebruiker;
+ 
+ Les *nsasd = [self.currentCursus.lessen objectAtIndex:0];
+ for(Vraag* vraag in nsasd.vragen){
+ if(vraag.beantwoord == NO){
+ qs.currentVraag = vraag;
+ break;
+ }
+ }
 }
-*/
+
 
 @end

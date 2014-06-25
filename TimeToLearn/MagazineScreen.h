@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuestionScreen.h"
 #import "Objects.h"
 
 @interface MagazineScreen : UIViewController
@@ -16,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *magazineTitel;
 @property (weak, nonatomic) IBOutlet UITextView *magazineTekst;
 @property (weak, nonatomic) IBOutlet UIImageView *magazineImage;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
